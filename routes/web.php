@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//  Form Route
+/* Great MD Forms */
+/* https://app.drchrono.com/ehr-emr/medical-form-templates/ */
+Route::get('/new/condition', 'HomeController@onSymptomAndConditionForm');

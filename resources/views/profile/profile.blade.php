@@ -3,7 +3,19 @@
 
     <div class="Profile-Background">
       <img src="{{asset('images/profile/joe-davola-the-pitch-seinfeld.jpg')}}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
-      <img src="{{asset('images/user-types/admin.svg')}}" class="Profile-Type" alt="">
+
+      @switch(Auth::user()->account)
+        @case("patient")
+          <img src="{{asset('images/user-types/basic.svg')}}" class="Profile-Type" alt="">
+        @break
+        @case("administrator")
+          <img src="{{asset('images/user-types/admin.svg')}}" class="Profile-Type" alt="">
+        @break;
+        @case("physician")
+          <img src="{{asset('images/user-types/physician.svg')}}" class="Profile-Type" alt="">
+        @break;
+      @endswitch
+
     </div>
 
     <hr>

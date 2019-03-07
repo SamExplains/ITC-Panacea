@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      return view('home');
     }
+
+    public function onSymptomAndConditionForm(){
+      return view('forms.conditions_and_symptoms._conditions_and_symptoms');
+    }
+
 }

@@ -25,6 +25,27 @@
                             </div>
                         </div>
 
+                      {{-- Account type --}}
+                      <div class="form-group row">
+                        <label for="name" class="col-md-4 col-form-label text-md-right">Type</label>
+
+                        <div class="col-md-6">
+
+                          <select class="ui dropdown fluid" name="account" required>
+                            <option value="">What are you?</option>
+                            <option value="patient">Patient</option>
+                            <option value="administrator">Administrator</option>
+                            <option value="physician">Physician</option>
+                          </select>
+
+                          @if ($errors->has('account'))
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('account') }}</strong>
+                                    </span>
+                          @endif
+                        </div>
+                      </div>
+
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
