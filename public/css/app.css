@@ -49886,6 +49886,47 @@ a.text-dark:focus {
   }
 }
 
+.Profile {
+  padding: 1.5rem;
+  background-color: #fffff;
+  border-radius: 5rem !important;
+}
+
+.Profile-Background {
+  background: url(/images/stephen-johnson.jpg?dd2a15ef3f9a3781967dcefc3b3d5388);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  -o-object-position: bottom !important;
+     object-position: bottom !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20vh;
+  position: relative;
+}
+
+.Profile-Photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 7rem;
+  background-color: rgba(45, 199, 255, 0.71);
+  padding: 0.75rem;
+}
+
+.Profile-Type {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 3rem;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

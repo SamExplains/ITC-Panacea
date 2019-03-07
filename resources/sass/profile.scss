@@ -1,0 +1,39 @@
+@import "variables";
+
+.Profile {
+  padding: 1.5rem;
+  background-color: $pearl-opac-50;
+  border-radius: 5rem !important;
+
+  &-Background{
+    background: url("../../public/images/defaults/stephen-johnson.jpg");
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    object-position: bottom !important;
+    object-fit: cover;
+    height: 20vh;
+    position: relative;
+  }
+
+  &-Photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25rem;
+    object-fit: cover;
+    object-position: center;
+    width: 7rem;
+    background-color: $sky-blue-opac-50;
+    padding: .75rem;
+  }
+
+  &-Type {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 3rem;
+    //transform: translate(-50%, -50%);
+  }
+
+}

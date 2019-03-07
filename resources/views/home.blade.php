@@ -60,13 +60,21 @@
                         <p>Bar chart</p>
                       </div>
 
-                      <div class="col-12 mt-3">
+                      <div class="col-8 mt-3">
                         <h5 class="ui header font-weight-bold">Medical Information</h5>
                         <a href="#" class="d-block">Your stored medical information <i class="ml-3 ui arrow right icon"></i></a>
                         <a href="#" class="d-block">Update your medical information <i class="ml-3 ui arrow right icon"></i></a>
 
                         <p class="mt-3">Here you can see a broad overview of your medical information in a informative and educational way.</p>
                         <p class="mt-3">Medical panel instruments like in the photo!</p>
+                      </div>
+
+                      <div class="col-4 mt-3">
+                        <h5 class="ui header font-weight-bold">Your Profile</h5>
+                        @include('profile.profile')
+                        <a href="#" class="d-block mt-3">Edit profile <i class="ml-3 ui arrow right icon"></i></a>
+
+                        <p class="mt-3">Edit your profile settings such as photo, email among other things.</p>
                       </div>
 
                     </div>
