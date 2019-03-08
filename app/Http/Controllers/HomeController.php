@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Demographic;
+use http\Env\Response;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-      return view('home');
+      $demograph_exist = Demographic::find(1);
+      return view('home', ['demograph' => $demograph_exist]);
     }
 
     public function onSymptomAndConditionForm(){

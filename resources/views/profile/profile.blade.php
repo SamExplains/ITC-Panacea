@@ -2,7 +2,7 @@
   <div class="col-12 Profile">
 
     <div class="Profile-Background">
-      <img src="{{asset('images/profile/joe-davola-the-pitch-seinfeld.jpg')}}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
+      <img src="{{asset('images/profile/lion-3317670_1280.jpg')}}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
 
       @switch(Auth::user()->account)
         @case("patient")

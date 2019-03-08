@@ -49928,8 +49928,8 @@ a.text-dark:focus {
 }
 
 .Profile:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   transition: all ease-in-out 0.3s;
 }
 

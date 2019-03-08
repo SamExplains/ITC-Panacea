@@ -16,6 +16,8 @@ class CreateDemographicsTable extends Migration
         Schema::create('demographics', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned();
+            $table->string('firstname');
+            $table->string('lastname');
             $table->integer('age');
             $table->string('gender');
             $table->string('country');

@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Panacea | Welcome</title>
 
+        <!-- Favicon icon link -->
+        <link rel="icon" type="image/png" href="{{asset('images/Favicons (panacea)/favicon-48.png')}}"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -81,7 +83,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                  <img src="{{asset('images/Favicons (panacea)/favicon-60.png')}}" alt="">Panacea Medical App
                 </div>
 
                 <div class="links">
@@ -93,7 +95,12 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+              <p>Popular Questions</p>
+              <p>Latest Questions</p>
+              <p>Top User(s)</p>
+              <p>Top Physician(s)</p>
             </div>
         </div>
     </body>
 </html>
+

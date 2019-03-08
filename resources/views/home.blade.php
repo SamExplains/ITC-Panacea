@@ -35,8 +35,11 @@
 
                       <div class="col-md-6">
                         <h5 class="ui header font-weight-bold">Demographic Information</h5>
-                        <a href="#" class="d-block">New demographic information<i class="ml-3 ui arrow right icon"></i></a>
-                        <a href="#" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>
+                        @if ($demograph)
+                          <a href="{{route('demographic.index')}}" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>
+                        @else
+                          <a href="{{route('demographic.create')}}" class="d-block">New demographic information<i class="ml-3 ui arrow right icon"></i></a>
+                        @endif
 
                         <p class="mt-5">
                           Please take your time filling out the demographic questionaire to help us gauge and create a better experience for you.
@@ -75,6 +78,8 @@
                         <a href="#" class="d-block mt-3">Edit profile <i class="ml-3 ui arrow right icon"></i></a>
 
                         <p class="mt-3">Edit your profile settings such as photo, email among other things.</p>
+                      </div>
+
                       </div>
 
                     </div>
