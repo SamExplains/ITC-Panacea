@@ -22,7 +22,8 @@ class DemographicsController extends Controller
     public function index()
     {
         //
-      $d_info = Demographic::find(\Auth::user()->id);
+//      $d_info = Demographic::find(\Auth::user()->id);
+      $d_info = Demographic::where('user_id', '=', \Auth::user()->id)->first();
       return view('forms.demographic._edit', compact('d_info'));
     }
 
@@ -49,7 +50,7 @@ class DemographicsController extends Controller
     {
         //
       $validatedData = $request->validate([
-        'user_id' => 'required|max:60',
+        'user_id' => 'required',
         'firstname' => 'required|max:60',
         'lastname' => 'required|max:60',
         'country' => 'required|max:60',
@@ -60,23 +61,20 @@ class DemographicsController extends Controller
         'race' => 'required|max:60',
       ]);
 
-        $demographic = new Demographic();
-        $demographic->user_id = $request->user_id;
-        $demographic->firstname = $request->firstname;
-        $demographic->lastname = $request->lastname;
-        $demographic->country = $request->country;
-        $demographic->age = $request->age;
-        $demographic->gender = $request->gender;
-        $demographic->military_status = $request->military_status;
-        $demographic->ethnicity = $request->ethnicity;
-        $demographic->race = $request->race;
-        $demographic->save();
-//        dd($validatedData);
+      $stored = ( Demographic::where('user_id', '=', \Auth::user()->id)->first() === null ? new Demographic(): Demographic::where('user_id', '=', \Auth::user()->id)->first() );
 
-//      if (Demographic::Create($request->all())){
-//        return true;
-//      }
+      $stored->user_id = $request->user_id;
+      $stored->firstname = $request->firstname;
+      $stored->lastname = $request->lastname;
+      $stored->country = $request->country;
+      $stored->age = $request->age;
+      $stored->gender = $request->gender;
+      $stored->military_status = $request->military_status;
+      $stored->ethnicity = $request->ethnicity;
+      $stored->race = $request->race;
+      $stored->save();
 
+      return redirect('home');
     }
 
     /**

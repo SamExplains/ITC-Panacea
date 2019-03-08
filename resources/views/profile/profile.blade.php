@@ -36,18 +36,33 @@
       <tr>
         <td scope="row">Demographic Info</td>
         <td>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Consequatur mollitia quasi tenetur, und.</p>
-          <p>Amet blanditiis dolorem dolores ducimu.</p>
+          @if (Route::has('home') && $demograph !== null)
+            <p><b class="font-weight-bold text-success">{{ $demograph->firstname }}, {{ $demograph->lastname }}</b></p>
+            <p><b class="font-weight-bold text-success">{{ $demograph->age }} / {{ ucfirst($demograph->gender) }} / {{ ucfirst($demograph->race) }} / {{ ucfirst($demograph->ethnicity) }}</b></p>
+         @else
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Consequatur mollitia quasi tenetur, und.</p>
+            <p>Amet blanditiis dolorem dolores ducimu.</p>
+         @endif
+
         </td>
       </tr>
       <tr>
         <td scope="row">Medical Info</td>
-        <td>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Consequatur mollitia quasi tenetur, und.</p>
-          <p>Amet blanditiis dolorem dolores ducimu.</p>
-        </td>
+        @if ($medical !== null)
+            <td>
+              <p>D.O.B <b class="font-weight-bold text-success">{{ $medical->dob }}</b></p>
+              <p>Health Insurance <b class="font-weight-bold text-success">{{ $medical->health_insurance_name }}</b></p>
+              <p>Emergency Contact <b class="font-weight-bold text-success">{{ $medical->emergency_contact_name }}</b></p>
+              <p>Physician <b class="font-weight-bold text-success">{{ $medical->health_insurance_physician_name }}</b></p>
+            </td>
+        @else
+          <td>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Consequatur mollitia quasi tenetur, und.</p>
+            <p>Amet blanditiis dolorem dolores ducimu.</p>
+          </td>
+        @endif
       </tr>
       </tbody>
     </table>

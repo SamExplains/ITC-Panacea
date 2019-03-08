@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Demographic;
+use App\MedicalInformation;
 use http\Env\Response;
 use Illuminate\Http\Request;
 
@@ -25,8 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $demograph_exist = Demographic::find(1);
-      return view('home', ['demograph' => $demograph_exist]);
+//      $demograph_exist = Demographic::find(\Auth::user()->id);
+      $demograph_exist = Demographic::where('user_id', '=', \Auth::user()->id)->first();
+      $medical_exist = MedicalInformation::where('user_id', '=', \Auth::user()->id)->first();
+      return view('home', ['demograph' => $demograph_exist, 'medical' => $medical_exist]);
     }
 
     public function onSymptomAndConditionForm(){

@@ -24,6 +24,7 @@
           </div>
 
           <h3 class="ui header mb-5">Demographic Information Form</h3>
+          <hr class="ui divider inverted">
 
           <div class="two fields">
             <div class="field required">

@@ -40,5 +40,6 @@ Route::get('/all/symptoms', 'SearchController@allSymptoms');
 /* https://app.drchrono.com/ehr-emr/medical-form-templates/ */
 Route::resources([
   'demographic' => 'DemographicsController',
-  'condition' => 'ConditionsAndSymptomsController'
+  'condition' => 'ConditionsAndSymptomsController',
+  'medical' => 'MedicalInformationController'
 ]);

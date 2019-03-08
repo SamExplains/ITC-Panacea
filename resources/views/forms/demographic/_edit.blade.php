@@ -14,9 +14,7 @@
         </div><br />
       @endif
 
-
-      {{--<form action="{{route('demographic.store')}}" method="post">--}}
-      <form action="" method="post">
+      <form action="{{route('demographic.store')}}" method="post">
         @csrf
         <div class="ui form">
 
@@ -25,6 +23,7 @@
           </div>
 
           <h3 class="ui header mb-5">Edit Your Demographic Information Form</h3>
+          <hr class="ui divider inverted">
 
           <div class="two fields">
             <div class="field required">

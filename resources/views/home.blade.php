@@ -35,8 +35,7 @@
 
                       <div class="col-md-6">
                         <h5 class="ui header font-weight-bold">Demographic Information</h5>
-                        @if ($demograph)
-                          {{--<a href="{{route('demographic.index')}}" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>--}}
+                        @if ($demograph !== null)
                           <div class="Demographic bg-light p-3">
                             <h6 class="ui header">Last updated at {{$demograph->created_at}}</h6>
                             <p class="font-weight-light">Registered as {{ $demograph->lastname }}, {{ $demograph->firstname }} </p>
@@ -44,12 +43,11 @@
                           </div>
                         @else
                           <a href="{{route('demographic.create')}}" class="d-block">New demographic information<i class="ml-3 ui arrow right icon"></i></a>
-                        @endif
 
-                        <p class="mt-5">
-                          Please take your time filling out the demographic questionaire to help us gauge and create a better experience for you.
-                          <a href="#">You can always update your demographic information here.</a>
-                        </p>
+                          <p class="mt-5">
+                            Please take your time filling out the demographic questionaire to help us gauge and create a better experience for you.
+                          </p>
+                        @endif
 
                       </div>
 
@@ -70,9 +68,26 @@
 
                       <div class="col-md-8 mt-3">
                         <h5 class="ui header font-weight-bold">Medical Information</h5>
-                        <a href="#" class="d-block">Your stored medical information <i class="ml-3 ui arrow right icon"></i></a>
-                        <a href="#" class="d-block">Update your medical information <i class="ml-3 ui arrow right icon"></i></a>
 
+                        @if ($medical !== null)
+                          <div class="row p-3 bg-light">
+                            <div class="col-md-1 col-2">
+                              <img src="{{asset('images/defaults/checkmark_gr.svg')}}" class="img-responsive" alt="">
+                            </div>
+                            <div class="col-md-11 col-10 my-auto">
+                              <h6 class="ui header">Last updated at {{$medical->updated_at}}</h6>
+                              <p>Filled out under <b class="text-primary">{{$medical->fullname}}</b></p>
+                              <p>Health Insurer <b class="text-danger">{{$medical->health_insurance_name}}</b>, Plan ID <b class="text-danger">{{ $medical->health_insurance_id_number }}</b></p>
+
+                            </div>
+                            <div class="col-12 mt-3">
+                              <a href="{{route('medical.index')}}" class="d-block">Update your medical information <i class="ml-3 ui arrow right icon"></i></a>
+                            </div>
+
+                          </div>
+                        @else
+                          <a href="{{route('medical.create')}}" class="d-block">New medical information <i class="ml-3 ui arrow right icon"></i></a>
+                        @endif
                         <p class="mt-3">Here you can see a broad overview of your medical information in a informative and educational way.</p>
                         <p class="mt-3">Medical panel instruments like in the photo!</p>
                       </div>
@@ -92,6 +107,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+  </div>
 @endsection
