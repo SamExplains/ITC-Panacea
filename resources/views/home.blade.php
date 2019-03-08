@@ -36,7 +36,12 @@
                       <div class="col-md-6">
                         <h5 class="ui header font-weight-bold">Demographic Information</h5>
                         @if ($demograph)
-                          <a href="{{route('demographic.index')}}" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>
+                          {{--<a href="{{route('demographic.index')}}" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>--}}
+                          <div class="Demographic bg-light p-3">
+                            <h6 class="ui header">Last updated at {{$demograph->created_at}}</h6>
+                            <p class="font-weight-light">Registered as {{ $demograph->lastname }}, {{ $demograph->firstname }} </p>
+                            <a href="{{route('demographic.index')}}" class="d-block">Update demographic information<i class="ml-3 ui arrow right icon"></i></a>
+                          </div>
                         @else
                           <a href="{{route('demographic.create')}}" class="d-block">New demographic information<i class="ml-3 ui arrow right icon"></i></a>
                         @endif

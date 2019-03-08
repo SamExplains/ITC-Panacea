@@ -18,3 +18,9 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.universal-box-shadow{
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+  -moz-box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+}
