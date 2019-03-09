@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\MedicationOther;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
@@ -19,6 +20,10 @@ class SearchController extends Controller
 
   public function allConditions(){
     return \App\Condition::all();
+  }
+
+  public function allMedicationsOther(){
+    return MedicationOther::all();
   }
 
 

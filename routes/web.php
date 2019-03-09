@@ -37,6 +37,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 /* All Symptoms */
 Route::get('/all/symptoms', 'SearchController@allSymptoms');
 Route::get('/all/conditions', 'SearchController@allConditions');
+Route::get('/all/medication', 'SearchController@allMedicationsOther');
 
 /* Great MD Forms */
 /* https://app.drchrono.com/ehr-emr/medical-form-templates/ */

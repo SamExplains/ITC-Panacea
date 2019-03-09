@@ -139,6 +139,16 @@ function () {
           s_dropdown.append(items);
         }
       });
+      var m_dropdown = $('#medication_other_mult');
+      $.ajax({
+        type: 'get',
+        url: '/all/medication',
+        success: function success(medi) {
+          medi.forEach(function (m) {
+            m_dropdown.append("<option id=\"".concat(Math.random().toString(36).substr(2, 5), "\" value=\"").concat(m.medication_o, "\" >").concat(m.medication_o, "</option>"));
+          });
+        }
+      });
     }
   }]);
 

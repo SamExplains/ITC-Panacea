@@ -42,6 +42,17 @@ class Forms {
       }
     });
 
+    const m_dropdown = $('#medication_other_mult');
+    $.ajax({
+      type : 'get',
+      url: '/all/medication',
+      success:function(medi){
+        medi.forEach((m) => {
+          m_dropdown.append(`<option id="${Math.random().toString(36).substr(2, 5)}" value="${m.medication_o}" >${m.medication_o}</option>`);
+        });
+      }
+    });
+
   }
 
 }

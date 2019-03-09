@@ -15,8 +15,7 @@ class CreateMedicationOtherTable extends Migration
     {
         Schema::create('medication_other', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('medication_other');
-            $table->timestamps();
+            $table->string('medication_o');
         });
     }
 

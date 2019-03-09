@@ -66,6 +66,14 @@
           </label>
         </div>
 
+        <div class="field">
+          <label for="medication_other_mult">Please select one or many additional medications tried from below.
+            <select class="ui fluid search dropdown" multiple="" id="medication_other_mult" name="medication_other_mult[]">
+              <option value="{{ old('medication_other_mult[]') }}">Select one or multiple alternative medications</option>
+            </select>
+          </label>
+        </div>
+
 
         <h6 class="ui header bg-warning p-3">Finalization</h6>
         <hr>

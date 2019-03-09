@@ -23,8 +23,7 @@ class ConditionsAndSymptomsController extends Controller
     {
 //      return response(Symptom::where('id','=', 's_342')->first());
         //
-      $symptoms = \App\Symptom::all();
-      return view('forms.conditions_and_symptoms._conditions_and_symptoms', compact('symptoms'));
+      return view('forms.conditions_and_symptoms._conditions_and_symptoms');
     }
 
     /**
