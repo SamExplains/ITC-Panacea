@@ -22,7 +22,7 @@ class MedicalInformationController extends Controller
      */
     public function index()
     {
-      $store_medical = MedicalInformation::where('user_id', '=', 2)->first();
+      $store_medical = MedicalInformation::where('user_id', '=', \Auth::user()->id)->first();
       return view('forms.medical_information._edit', ['u_medical' => $store_medical]);
     }
 
@@ -35,7 +35,7 @@ class MedicalInformationController extends Controller
     public function create(Faker $faker)
     {
         //
-      $demographic_info_found = Demographic::find(\Auth::user()->id);
+      $demographic_info_found = Demographic::where('user_id', '=', \Auth::user()->id)->first();
       return view('forms.medical_information._new',[ 'd_filled' => $demographic_info_found, 'faker' => $faker]);
 
     }

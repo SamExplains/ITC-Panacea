@@ -3,82 +3,85 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-12">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem blanditiis deserunt eos exercitationem incidunt ipsam iste libero minus necessitatibus nostrum quasi qui quidem recusandae rem, sed vel voluptate! Voluptatem!
 
-      <div class="col-12 mt-5">
-        {{-- Conditions --}}
-        <select class="ui search dropdown fluid conditions_dd" id="conditions_dd" name="condition">
-          <option selected>Search Condition ...</option>
-        </select>
+    <div class="col-12 mt-3">
 
-        <script type="application/javascript">
-          $('.ui.dropdown.conditions_dd')
-          .dropdown()
-          ;
+      <div class="ui positive message">
+        <i class="close icon"></i>
+        <div class="header">
+          Information
+        </div>
+        <p class="lead">
+          Please fill out this form to create a new condition for yourself. This form has 3 portions ( Conditions & Symptoms > Medications > Finalize... )
+        </p>
+        </div>
+      </div>
 
-          /* <option value="">State</option> */
-          const dropdown = $('#conditions_dd');
-          const items = [];
-          $.ajax({
-            type : 'get',
-            url: '/all/conditions',
-            success:function(cond){
+    <form class="col-12 mt-5" method="post" action="{{route('condition.store')}}">
+      @csrf
 
-              cond.forEach((c) => {
-                items.push(`<option>${c.name.replace(/['"]+/g, '')} <b class="text-primary"> ..... ${ c.extras_hint.replace(/['"]+/g, '') }</b></option>`);
-              });
+      <div class="ui form">
 
-              dropdown.append(items);
-            }
-          });
+        <h6 class="ui header bg-warning p-3">Conditions & Symptoms</h6>
+        <hr>
 
-        </script>
+        <div class="field">
+          <label for="">Filling out the form as {{ Auth::user()->name }}</label>
+          Include AGE, GENDER, FULLNAME,
+        </div>
+
+        <div class="field">
+          {{-- Conditions --}}
+          <label for="conditions_dd">Please search for your condition.</label>
+          <hr class="ui divider">
+
+          <select class="ui search dropdown fluid conditions_dd" id="conditions_dd" name="condition">
+            <option value="{{ old('condition') }}">Search Condition ...</option>
+          </select>
+        </div>
+
+        <div class="field">
+
+          <label for="symptoms_dd">Please for one or multiple symptoms depending on your condition.</label>
+          <hr class="ui divider">
+
+          <select class="ui fluid search dropdown" multiple="" id="symptoms_dd" name="symptoms[]">
+            <option value="{{ old('symptoms') }}">Select one or multiple symptoms</option>
+          </select>
+
+        </div>
+
+        <h6 class="ui header bg-warning p-3">Medication</h6>
+        <hr>
+
+        <div class="field">
+          <label for="medication_desc">Please describe any medications you are current taken or have taken. Also include if they were prescribed and if you have had any negative side effects.
+            <textarea name="medication_desc" cols="30" rows="10" title="Medication Description"></textarea>
+          </label>
+        </div>
+
+        <div class="field">
+          <label for="medication_other">Please describe any other kinds of medications or methods you have tried or used.
+            <textarea name="medication_other" cols="30" rows="10" title="Medication Other"></textarea>
+          </label>
+        </div>
+
+
+        <h6 class="ui header bg-warning p-3">Finalization</h6>
+        <hr>
+
+
+        <button class="ui button small green" type="submit">Submit Condition & Symptoms</button>
+
+      </div>
+
+
+    </form>
 
     </div>
 
-    <div class="col-12 mt-5">
-
-      <select class="ui fluid search dropdown" multiple="" id="symptoms_dd">
-        <option value="">Select one or multiple symptoms</option>
-      </select>
-
-      {{-- Symptoms --}}
-      <script type="application/javascript">
-        $('.ui.fluid.search.dropdown')
-        .search()
-        .dropdown()
-        ;
-
-        const s_dropdown = $('#symptoms_dd');
-        const s_items = [];
-        $.ajax({
-          type : 'get',
-          url: '/all/symptoms',
-          success:function(symp){
-            symp.forEach((s) => {
-              s_dropdown.append(`<option>${s.common_name.replace(/['"]+/g, '')} ..... ${s.name.replace(/['"]+/g, '')}</option>`);
-            });
-            s_dropdown.append(items);
-          }
-        });
-
-      </script>
-
-    </div>
-
-  </div>
 </div>
 
-    <script type="application/javascript">
-      {{--let data = [];--}}
-      {{--@foreach($symptoms as $symptom)--}}
-
-      {{--data.push({title: "{{$symptom->name}}"});--}}
-
-      {{--@endforeach--}}
-
-      // console.warn(data);
-    </script>
+  <script src="{{ asset('js/production.js')  }}" type="application/javascript"></script>
 
 @endsection

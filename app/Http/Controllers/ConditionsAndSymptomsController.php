@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Symptom;
 use Illuminate\Http\Request;
 
 class ConditionsAndSymptomsController extends Controller
@@ -20,9 +21,9 @@ class ConditionsAndSymptomsController extends Controller
      */
     public function index()
     {
+//      return response(Symptom::where('id','=', 's_342')->first());
         //
       $symptoms = \App\Symptom::all();
-//      return view('forms.conditions_and_symptoms._conditions_and_symptoms', compact('symptoms'));
       return view('forms.conditions_and_symptoms._conditions_and_symptoms', compact('symptoms'));
     }
 
@@ -45,6 +46,7 @@ class ConditionsAndSymptomsController extends Controller
     public function store(Request $request)
     {
         //
+      return response($request);
     }
 
     /**

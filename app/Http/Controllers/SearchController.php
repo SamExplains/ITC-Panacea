@@ -14,12 +14,10 @@ class SearchController extends Controller
   }
 
   public function allSymptoms(){
-    /*       return response('Working'); */
     return \App\Symptom::all();
   }
 
   public function allConditions(){
-    /*       return response('Working'); */
     return \App\Condition::all();
   }
 
