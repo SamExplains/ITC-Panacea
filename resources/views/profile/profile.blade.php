@@ -40,9 +40,7 @@
             <p><b class="font-weight-bold text-success">{{ $demograph->firstname }}, {{ $demograph->lastname }}</b></p>
             <p><b class="font-weight-bold text-success">{{ $demograph->age }} / {{ ucfirst($demograph->gender) }} / {{ ucfirst($demograph->race) }} / {{ ucfirst($demograph->ethnicity) }}</b></p>
          @else
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Consequatur mollitia quasi tenetur, und.</p>
-            <p>Amet blanditiis dolorem dolores ducimu.</p>
+            <p class="text-danger">No demographic information on record!</p>
          @endif
 
         </td>
@@ -58,9 +56,7 @@
             </td>
         @else
           <td>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Consequatur mollitia quasi tenetur, und.</p>
-            <p>Amet blanditiis dolorem dolores ducimu.</p>
+            <p class="text-danger">No medical information on record!</p>
           </td>
         @endif
       </tr>

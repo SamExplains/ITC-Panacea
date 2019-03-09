@@ -9,7 +9,7 @@
     background: url("../../public/images/defaults/stephen-johnson.jpg");
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    object-position: bottom !important;
+    object-position: center !important;
     object-fit: cover;
     height: 20vh;
     position: relative;
@@ -34,6 +34,13 @@
     right: 5%;
     width: 3rem;
     //transform: translate(-50%, -50%);
+  }
+
+  &-New-Photo {
+    position: absolute;
+    top: 5% !important;
+    left: 5% !important;
+    border-radius: 15rem !important;
   }
 
   &:hover {

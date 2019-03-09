@@ -6,13 +6,14 @@
     <div class="col-12">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem blanditiis deserunt eos exercitationem incidunt ipsam iste libero minus necessitatibus nostrum quasi qui quidem recusandae rem, sed vel voluptate! Voluptatem!
 
-      <div class="col-12">
-        <select class="ui search dropdown fluid" id="conditions_dd">
-          <option selected>Search Symptom ...</option>
+      <div class="col-12 mt-5">
+        {{-- Conditions --}}
+        <select class="ui search dropdown fluid conditions_dd" id="conditions_dd" name="condition">
+          <option selected>Search Condition ...</option>
         </select>
 
         <script type="application/javascript">
-          $('.ui.dropdown')
+          $('.ui.dropdown.conditions_dd')
           .dropdown()
           ;
 
@@ -21,11 +22,11 @@
           const items = [];
           $.ajax({
             type : 'get',
-            url: '/all/symptoms',
-            success:function(data){
+            url: '/all/conditions',
+            success:function(cond){
 
-              data.forEach((d) => {
-                items.push(`<option>${d.name.replace('"', '')} [<b class="text-primary">${ (d.children_id !== 'null') ? d.children_id : 'n/a' }</b>]</option>`);
+              cond.forEach((c) => {
+                items.push(`<option>${c.name.replace(/['"]+/g, '')} <b class="text-primary"> ..... ${ c.extras_hint.replace(/['"]+/g, '') }</b></option>`);
               });
 
               dropdown.append(items);
@@ -34,19 +35,38 @@
 
         </script>
 
-      {{--@if ($symptoms)--}}
+    </div>
 
-        {{--@foreach($symptoms as $symptom)--}}
-          {{--<p>--}}
-            {{--<a href="#">--}}
-              {{--{{$symptom->name}} [ {{ ($symptom->children_id === 'null' ? 'n/a' : $symptom->children_id ) }} ]--}}
-            {{--</a>--}}
-          {{--</p>--}}
-        {{--@endforeach--}}
+    <div class="col-12 mt-5">
 
-      {{--@endif--}}
+      <select class="ui fluid search dropdown" multiple="" id="symptoms_dd">
+        <option value="">Select one or multiple symptoms</option>
+      </select>
+
+      {{-- Symptoms --}}
+      <script type="application/javascript">
+        $('.ui.fluid.search.dropdown')
+        .search()
+        .dropdown()
+        ;
+
+        const s_dropdown = $('#symptoms_dd');
+        const s_items = [];
+        $.ajax({
+          type : 'get',
+          url: '/all/symptoms',
+          success:function(symp){
+            symp.forEach((s) => {
+              s_dropdown.append(`<option>${s.common_name.replace(/['"]+/g, '')} ..... ${s.name.replace(/['"]+/g, '')}</option>`);
+            });
+            s_dropdown.append(items);
+          }
+        });
+
+      </script>
 
     </div>
+
   </div>
 </div>
 

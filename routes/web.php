@@ -31,15 +31,23 @@ Route::get('/', function () {
 
 Auth::routes();
 
+/* Homepage for Admins/Patients/Physicians */
 Route::get('/home', 'HomeController@index')->name('home');
 
 /* All Symptoms */
 Route::get('/all/symptoms', 'SearchController@allSymptoms');
+Route::get('/all/conditions', 'SearchController@allConditions');
 
 /* Great MD Forms */
 /* https://app.drchrono.com/ehr-emr/medical-form-templates/ */
+
+/* Used to display all conditions & symptoms created by user */
+Route::get('profile/conditions', 'ProfileController@conditions')->name('profile.conditions');
+Route::get('profile/replys', 'ProfileController@replys')->name('profile.replys');
+
 Route::resources([
   'demographic' => 'DemographicsController',
   'condition' => 'ConditionsAndSymptomsController',
-  'medical' => 'MedicalInformationController'
+  'medical' => 'MedicalInformationController',
+  'profile' => 'ProfileController'
 ]);

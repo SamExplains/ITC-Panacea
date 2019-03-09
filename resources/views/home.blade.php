@@ -23,10 +23,35 @@
                       <div class="col-md-6">
                         <h5 class="ui header font-weight-bold">Conditions & Symptoms</h5>
 
-                        <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                        <a href="#" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                        <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                        <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                        @if ($demograph === null || $medical === null && Auth::user()->account === "patient")
+                          <div class="bg-light p-3">
+                            <img src="{{asset('images/defaults/caution.svg')}}" class="ui image mini centered mb-3" alt="">
+                            <h6 class="ui header">Notification</h6>
+                            <p>
+                              You must complete your <a href="{{route('demographic.create')}}">Demographic</a> and <a href="{{route('medical.create')}}">Medical Information</a>
+                              before being qualified to make a post as a patient!
+                            </p>
+                          </div>
+                        @else
+
+                          @switch(Auth::user()->account)
+
+                            @case("patient")
+                              <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                              <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                              <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                              <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                            @break
+                            @case("administrator")
+                              Hello Admin!
+                            @break
+                            @case("physician")
+                              Hello Physician!
+                            @break
+
+                          @endswitch
+
+                        @endif
 
                         <p class="mt-3">
                           Here you can manage your existing conditions & symptoms or simply create new conditions & symptoms that you may have.
@@ -95,9 +120,15 @@
                       <div class="col-md-4 col-12 mt-3">
                         <h5 class="ui header font-weight-bold">{{ Auth::user()->name }}'s Profile</h5>
                         @include('profile.profile')
-                        <a href="#" class="d-block mt-3">Edit profile <i class="ml-3 ui arrow right icon"></i></a>
 
-                        <p class="mt-3">Edit your profile settings such as photo, email among other things.</p>
+                        <div class="ui animated button green small fluid" onclick="window.location = '{{route('profile.index')}}'" tabindex="0">
+                          <div class="visible content">View</div>
+                          <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                          </div>
+                        </div>
+
+                        <p class="mt-3">View your profile settings and forums you participated in.</p>
                       </div>
 
                       </div>
