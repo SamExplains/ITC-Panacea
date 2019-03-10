@@ -44,8 +44,35 @@
       </div>
 
       <h6 class="ui header bg-warning p-2">Comments</h6>
-      <div class="">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eum.
+
+      <div class="Comment" style="position: relative; margin-bottom: 6rem">
+
+        <p class="text-right offset-md-9 offset-6 col-md-3 col-6 Comment-User">
+          <span class="font-weight-bold">{{ Auth::user()->name }}</span>
+          <img class="ui avatar image ml-3" src="{{ Auth::user()->photo }}">
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque, dicta esse expedita harum hic ipsa ipsum
+          minus neque officiis perferendis possimus quos rem soluta totam veritatis voluptatem. Blanditiis dolorum earum
+          fugiat labore laborum neque rerum tempora vel veniam vero. Asperiores consequuntur, cum debitis dolorem eaque
+          explicabo iusto minus modi, molestias, odit repellendus suscipit temporibus ut voluptas voluptatem. Ab
+          deleniti expedita, explicabo itaque minima perspiciatis quasi ratione voluptas voluptatum! Animi beatae eius
+          est officia quaerat quam sequi, veniam vitae! Aspernatur corporis dolores ea eos eveniet id, iste minus non
+          quas repudiandae soluta ullam voluptatum? Asperiores delectus fugit inventore magni voluptatibus. A commodi
+          deserunt distinctio dolorem eos esse ex fuga itaque labore laudantium maiores molestias, natus necessitatibus
+          optio provident quaerat qui reiciendis sed sequi sit ullam veniam vitae. Ab adipisci dignissimos dolor
+          molestias porro recusandae veritatis. Assumenda dolore expedita illum iste nisi non, obcaecati pariatur quis
+          quos, rem reprehenderit, veritatis voluptates.
+        </p>
+
+        <div class="Comment-Physician"  style="position: absolute; top: 95%; right: 0;">
+          <h6 class="ui header text-right">Evaluate this comment <b class="text-primary">(Physician Only!)</b></h6>
+          <div class="ui buttons right floated right aligned" id="eval">
+            <button class="ui button pink" data-valuation="1" onclick="console.warn($(this).attr('data-valuation'))">1</button>
+            <button class="ui button purple" data-valuation="2" onclick="console.warn($(this).attr('data-valuation'))">2</button>
+            <button class="ui button violet" data-valuation="3" onclick="console.warn($(this).attr('data-valuation'))">3</button>
+          </div>
+        </div>
       </div>
 
       <hr>
@@ -63,7 +90,7 @@
             <div class="field" id="replyField">
               <textarea id="responseTextArea" type="responseTextArea" placeholder="Enter response here"></textarea>
             </div>
-            <button class="ui blue labeled submit icon button right floated" name="Add_Reply">
+            <button class="ui pink labeled submit icon button right floated" name="Add_Reply">
               <i class="icon edit"></i> Add Reply
             </button>
           </div>

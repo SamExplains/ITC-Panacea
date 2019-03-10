@@ -49961,6 +49961,24 @@ a.text-dark:focus {
   font-weight: 900;
 }
 
+.Comment {
+  padding: 1rem;
+  background-color: rgba(93, 111, 140, 0.11);
+}
+
+.Comment-User {
+  padding: 0.5rem;
+  background-color: white;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.Comment-Physician {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
