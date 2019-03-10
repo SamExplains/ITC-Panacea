@@ -1,0 +1,23 @@
+@import "variables";
+
+.Forum{
+  background: $light-grey-opac-70;
+
+  &-User{
+    background: $magnesium;
+
+    span {
+      background: $theme-light;
+      padding: .5rem 2rem .5rem 2rem;
+      border-radius: 5rem;
+    }
+
+  }
+
+  &-Symptoms {
+    background: white;
+    color: $purple;
+    font-weight: 900;
+  }
+
+}

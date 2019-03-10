@@ -50,5 +50,6 @@ Route::resources([
   'demographic' => 'DemographicsController',
   'condition' => 'ConditionsAndSymptomsController',
   'medical' => 'MedicalInformationController',
-  'profile' => 'ProfileController'
+  'profile' => 'ProfileController',
+  'forum' => 'ForumController'
 ]);

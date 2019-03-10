@@ -66,7 +66,7 @@
                                             <td>
 
                                               @foreach(unserialize($forum->symptoms) as $s)
-                                                <span class="text-primary">{{ $s }}</span>
+                                                <span class="text-primary">{{ $s }}</span><br>
                                               @endforeach
 
                                             </td>
@@ -76,7 +76,7 @@
                                             <td>
 
                                               @foreach(unserialize($forum->medication_other_mult) as $m_o)
-                                                <span class="text-primary">{{ $m_o }}</span>
+                                                <span class="text-primary">{{ $m_o }}</span> <br>
                                               @endforeach
 
                                             </td>
@@ -90,14 +90,14 @@
 
                                       </details>
 
-                                      <a href="#">View my post <i class="ui icon arrow right"></i></a>
+                                      <a href="{{route('forum.show', $forum->id)}}">View my post <i class="ui icon arrow right"></i></a>
 
                                     </div>
                                   </div>
 
                                 </div>
 
-
+                                <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
                                 <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
                                 <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
                                 <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>

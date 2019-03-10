@@ -63,6 +63,19 @@
 
         </div>
 
+        <div class="two fields">
+          <div class="field">
+            <label for="account">Account Type</label>
+            <input class="input disabled" type="text" name="account" value="{{ Auth::user()->account }}" title="Account" readonly>
+          </div>
+
+          <div class="field">
+            <label for="u_photo">User Photo</label>
+            <input class="input disabled" type="text" name="u_photo" value="{{ Auth::user()->photo }}" title="User Photo" readonly>
+          </div>
+
+        </div>
+
         <div class="field required">
           {{-- Conditions --}}
           <label for="conditions_dd">Please search for your condition.</label>

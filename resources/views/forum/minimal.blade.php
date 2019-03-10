@@ -1,0 +1,1 @@
+Minimum forum view before detailed!

@@ -9,6 +9,7 @@ use App\MedicalInformation;
 use App\Symptom;
 use Illuminate\Http\Request;
 use Faker\Generator as Faker;
+use Illuminate\Support\Carbon;
 
 class ConditionsAndSymptomsController extends Controller
 {
@@ -54,6 +55,8 @@ class ConditionsAndSymptomsController extends Controller
         'user_id' => 'required',
         'fullname' => 'required',
         'age' => 'required',
+        'account' => 'required',
+        'u_photo' => 'required',
         'gender' => 'required',
         'condition' => 'required',
         'severity' => 'required',
@@ -64,10 +67,12 @@ class ConditionsAndSymptomsController extends Controller
         'consent' => 'required'
       ]);
 
-      $store = ( Forum::where('user_id', '=', \Auth::user()->id, 'and', 'condition', '=', $request->condition)->first() === null ? new Forum(): Condition::where('user_id', '=', \Auth::user()->id)->first() );
+      $store = ( Forum::where('user_id', '=', \Auth::user()->id, 'and', 'condition', '=', $request->condition)->first() === null ? new Forum(): Forum::where('user_id', '=', \Auth::user()->id)->first() );
       $store->user_id = $request->user_id;
       $store->fullname = $request->fullname;
       $store->age = $request->age;
+      $store->account = $request->account;
+      $store->u_photo = $request->u_photo;
       $store->gender = $request->gender;
       $store->condition = $request->condition;
       $store->severity = $request->severity;
@@ -76,6 +81,8 @@ class ConditionsAndSymptomsController extends Controller
       $store->medication_other = $request->medication_other;
       $store->medication_other_mult = serialize($request->medication_other_mult);
       $store->consent = $request->consent;
+//      $store->created_at = Carbon::now();
+//      $store->updated_at = Carbon::now();
       $store->save();
 
       return redirect('home');
