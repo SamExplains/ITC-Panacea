@@ -3,13 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_09_071308_create_medication_other_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_09_071308_create_medication_other_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/production.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/development.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/profile.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,33 +46,34 @@
     <session id="-159085630">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="16" />
-          <entry key="js" value="447" />
-          <entry key="json" value="52" />
-          <entry key="php" value="18096" />
-          <entry key="scss" value="1040" />
+          <entry key="js" value="533" />
+          <entry key="json" value="73" />
+          <entry key="php" value="21571" />
+          <entry key="scss" value="1167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="12995" />
+          <entry key="Blade" value="15337" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="447" />
-          <entry key="PHP" value="5099" />
-          <entry key="SCSS" value="1040" />
-          <entry key="composer.json" value="31" />
+          <entry key="JavaScript" value="533" />
+          <entry key="PHP" value="6232" />
+          <entry key="SCSS" value="1167" />
+          <entry key="composer.json" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,10 +83,10 @@
           <entry key="env" value="4" />
           <entry key="jpg" value="4" />
           <entry key="js" value="27" />
-          <entry key="json" value="4" />
-          <entry key="php" value="220" />
+          <entry key="json" value="6" />
+          <entry key="php" value="250" />
           <entry key="rnc" value="1" />
-          <entry key="scss" value="17" />
+          <entry key="scss" value="19" />
           <entry key="svg" value="5" />
           <entry key="vue" value="2" />
         </counts>
@@ -85,18 +94,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="67" />
+          <entry key="Blade" value="79" />
           <entry key="CSS" value="1" />
           <entry key="Image" value="4" />
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="3" />
           <entry key="JavaScript" value="27" />
-          <entry key="PHP" value="153" />
+          <entry key="PHP" value="171" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
-          <entry key="SCSS" value="17" />
+          <entry key="SCSS" value="19" />
           <entry key="SVG" value="5" />
           <entry key="Vue.js" value="2" />
-          <entry key="composer.json" value="2" />
+          <entry key="composer.json" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -104,19 +113,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/sass/profile.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/development.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="933">
-              <caret line="50" column="76" lean-forward="true" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
+            <state relative-caret-position="506">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+              <folding>
+                <element signature="e#40#58#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="784">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="860">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -152,13 +191,9 @@
       <list>
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/physician_home.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_07_055433_demographics.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_07_204348_create_symptoms_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_07_220027_create_conditions_table.php" />
         <option value="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" />
@@ -167,37 +202,43 @@
         <option value="$PROJECT_DIR$/app/Demographic.php" />
         <option value="$PROJECT_DIR$/resources/views/forms/demographic/demographic.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/forms/demographic/_new_demographic.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_08_174545_create_medical_information_table.php" />
         <option value="$PROJECT_DIR$/app/MedicalInformation.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/resources/js/faker-pre-production.js" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/views/forms/demographic/_edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DemographicsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/forms/medical_information/_new.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forms/medical_information/_edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/profile/profile.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/_edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/sass/profile.scss" />
-        <option value="$PROJECT_DIR$/resources/views/profile/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/conditions_and_symptoms.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/replys.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MedicalInformationController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_09_071308_create_medication_other_table.php" />
         <option value="$PROJECT_DIR$/app/MedicationOther.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" />
-        <option value="$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/development.js" />
+        <option value="$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_09_083418_create_forums_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_09_234149_add_photo_to_users.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/profile/profile.blade.php" />
+        <option value="$PROJECT_DIR$/resources/sass/profile.scss" />
+        <option value="$PROJECT_DIR$/resources/views/profile/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -299,7 +340,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="2745" />
+    <option name="width" value="2606" />
     <option name="height" value="1548" />
   </component>
   <component name="ProjectView">
@@ -307,6 +348,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,17 +381,6 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
@@ -409,6 +440,13 @@
               <item name="Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -430,17 +468,23 @@
             <path>
               <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
               <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/conditions_and_symptoms.blade.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;ProfileCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ProfileController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/app.js&#10;web.p&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;welcomr&#9;null&#9;null&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;HomeCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Condit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medic&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ProfileCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ProfileController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/app.js&#10;web.p&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;welcomr&#9;null&#9;null&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -451,16 +495,16 @@
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/defaults" />
       <recent name="$PROJECT_DIR$/resources/views/forms/medical_information" />
       <recent name="$PROJECT_DIR$/public/images/user-types" />
       <recent name="$PROJECT_DIR$/resources/images/user-types" />
       <recent name="$PROJECT_DIR$/public/images/profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -488,12 +532,13 @@
       <workItem from="1551897470008" duration="20446000" />
       <workItem from="1551983951549" duration="20630000" />
       <workItem from="1552018237277" duration="38129000" />
-      <workItem from="1552112687311" duration="3996000" />
+      <workItem from="1552112687311" duration="11430000" />
+      <workItem from="1552174317230" duration="4004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83201000" />
+    <option name="totallyTimeSpent" value="94639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,10 +550,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2745" height="1548" extended-state="0" />
+    <frame x="0" y="23" width="2606" height="1548" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.105087265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11158966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -537,28 +582,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="103" column="11" lean-forward="true" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forms/demographic/demographic.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="922">
@@ -566,27 +589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-540">
           <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,32 +610,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/faker-pre-production.js" />
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_08_174545_create_medical_information_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="791">
           <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -660,20 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/profile.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/profile/replys.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -681,24 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/profile/conditions_and_symptoms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -713,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#40#67#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,38 +689,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2576">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forms/demographic/_new_demographic.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
+        <state relative-caret-position="-2576" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="322" column="16" selection-start-line="322" selection-start-column="16" selection-end-line="322" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -777,16 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="970">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DemographicsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,40 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Demographic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="128" lean-forward="true" selection-start-line="9" selection-start-column="128" selection-end-line="9" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedicalInformationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/profile.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -859,9 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,17 +754,166 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MedicalInformationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forms/demographic/_new_demographic.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Forum.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Demographic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="128" lean-forward="true" selection-start-line="9" selection-start-column="128" selection-end-line="9" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DemographicsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_09_083418_create_forums_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="50" column="49" lean-forward="true" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/development.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="50" column="76" lean-forward="true" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
+        <state relative-caret-position="506">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="942">
+          <caret line="73" column="11" lean-forward="true" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_09_234149_add_photo_to_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forms/conditions_and_symptoms/_conditions_and_symptoms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="-37">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>

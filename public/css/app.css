@@ -49915,7 +49915,8 @@ a.text-dark:focus {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  width: 7rem;
+  width: 7rem !important;
+  height: 7rem !important;
   background-color: rgba(45, 199, 255, 0.71);
   padding: 0.75rem;
 }
@@ -49947,5 +49948,20 @@ a.text-dark:focus {
 
 .universal-box-shadow {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.Feed {
+  padding: 1rem;
+}
+
+.Feed-Image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-repeat: no-repeat;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 15rem !important;
 }
 

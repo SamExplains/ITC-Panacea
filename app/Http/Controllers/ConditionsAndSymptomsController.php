@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Condition;
+use App\Demographic;
+use App\Forum;
+use App\MedicalInformation;
 use App\Symptom;
 use Illuminate\Http\Request;
+use Faker\Generator as Faker;
 
 class ConditionsAndSymptomsController extends Controller
 {
@@ -14,16 +19,17 @@ class ConditionsAndSymptomsController extends Controller
   }
 
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+  /**
+   * Display a listing of the resource.
+   *
+   * @param Faker $faker
+   * @return \Illuminate\Http\Response
+   */
+    public function index(Faker $faker)
     {
 //      return response(Symptom::where('id','=', 's_342')->first());
-        //
-      return view('forms.conditions_and_symptoms._conditions_and_symptoms');
+      $stored_demographic = Demographic::where('user_id','=', \Auth::user()->id)->first();
+      return view('forms.conditions_and_symptoms._conditions_and_symptoms', ['faker' => $faker, 'demographic' => $stored_demographic]);
     }
 
     /**
@@ -44,8 +50,35 @@ class ConditionsAndSymptomsController extends Controller
      */
     public function store(Request $request)
     {
-        //
-      return response($request);
+      $validatedData = $request->validate([
+        'user_id' => 'required',
+        'fullname' => 'required',
+        'age' => 'required',
+        'gender' => 'required',
+        'condition' => 'required',
+        'severity' => 'required',
+        'symptoms' => 'required',
+        'medication_desc' => 'required',
+        'medication_other' => 'required',
+        'medication_other_mult' => 'required',
+        'consent' => 'required'
+      ]);
+
+      $store = ( Forum::where('user_id', '=', \Auth::user()->id, 'and', 'condition', '=', $request->condition)->first() === null ? new Forum(): Condition::where('user_id', '=', \Auth::user()->id)->first() );
+      $store->user_id = $request->user_id;
+      $store->fullname = $request->fullname;
+      $store->age = $request->age;
+      $store->gender = $request->gender;
+      $store->condition = $request->condition;
+      $store->severity = $request->severity;
+      $store->symptoms = serialize($request->symptoms);
+      $store->medication_desc = $request->medication_desc;
+      $store->medication_other = $request->medication_other;
+      $store->medication_other_mult = serialize($request->medication_other_mult);
+      $store->consent = $request->consent;
+      $store->save();
+
+      return redirect('home');
     }
 
     /**

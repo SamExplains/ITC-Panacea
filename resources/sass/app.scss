@@ -24,3 +24,18 @@
   -moz-box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
   box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
 }
+
+.Feed {
+  padding: 1rem;
+
+
+  &-Image{
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 15rem !important;
+  }
+
+}

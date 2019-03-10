@@ -121,14 +121,13 @@ function () {
         url: '/all/conditions',
         success: function success(cond) {
           cond.forEach(function (c) {
-            items.push("<option value=\"".concat(c.common_name.replace(/['"]+/g, ''), "\">").concat(c.common_name.replace(/['"]+/g, ''), " <b class=\"text-primary\"> ..... ").concat(c.extras_hint.replace(/['"]+/g, ''), " ..... ").concat(c.severity, "</b></option>"));
+            items.push("<option value=\"".concat(c.common_name.replace(/['"]+/g, '') + 'º' + c.severity, "\">").concat(c.common_name.replace(/['"]+/g, ''), " <b class=\"text-primary\"> ..... ").concat(c.extras_hint.replace(/['"]+/g, ''), " ..... ").concat(c.severity, "</b></option>"));
           });
           dropdown.append(items);
         }
       });
       $('.ui.fluid.search.dropdown').search().dropdown();
       var s_dropdown = $('#symptoms_dd');
-      var s_items = [];
       $.ajax({
         type: 'get',
         url: '/all/symptoms',
@@ -136,7 +135,6 @@ function () {
           symp.forEach(function (s) {
             s_dropdown.append("<option id=\"".concat(Math.random().toString(36).substr(2, 5), "\" value=\"").concat(s.common_name.replace(/['"]+/g, ''), "\" >").concat(s.common_name.replace(/['"]+/g, ''), " ..... ").concat(s.name.replace(/['"]+/g, ''), "</option>"));
           });
-          s_dropdown.append(items);
         }
       });
       var m_dropdown = $('#medication_other_mult');

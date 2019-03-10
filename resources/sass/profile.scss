@@ -23,7 +23,8 @@
     border-radius: 25rem;
     object-fit: cover;
     object-position: center;
-    width: 7rem;
+    width: 7rem !important;
+    height: 7rem !important;
     background-color: $sky-blue-opac-50;
     padding: .75rem;
   }

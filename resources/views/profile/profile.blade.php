@@ -2,7 +2,11 @@
   <div class="col-12 Profile">
 
     <div class="Profile-Background">
-      <img src="{{asset('images/profile/lion-3317670_1280.jpg')}}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
+      @if (Auth::user()->photo === null)
+        <img src="{{asset('images/profile/lion-3317670_1280.jpg')}}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
+      @else
+        <img src="{{ Auth::user()->photo }}" class="mx-auto d-block mb-3 Profile-Photo"  alt="">
+      @endif
 
       @switch(Auth::user()->account)
         @case("patient")

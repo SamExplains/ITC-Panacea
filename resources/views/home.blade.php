@@ -37,10 +37,74 @@
                           @switch(Auth::user()->account)
 
                             @case("patient")
-                              <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                              <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                              <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                              <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+
+                              @if ($forum !== null)
+
+                                <div class="col-12 mx-auto mb-5  universal-box-shadow">
+
+                                  <div class="row Feed">
+                                    <div class="col-md-2 col-12">
+                                      <img src="{{Auth::user()->photo}}" class="ui image mini Feed-Image" style="" alt="">
+                                    </div>
+                                    <div class="col-md-10 col-12">
+                                      <details class="mb-3">
+
+                                        <table class="table">
+                                          <thead>
+                                          <tr>
+                                            <th>Name</th>
+                                            <th>Detail</th>
+                                          </tr>
+                                          </thead>
+                                          <tbody>
+                                          <tr>
+                                            <td>Severity</td>
+                                            <td class="text-danger">{{ $forum->severity }}</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Symptoms Described</td>
+                                            <td>
+
+                                              @foreach(unserialize($forum->symptoms) as $s)
+                                                <span class="text-primary">{{ $s }}</span>
+                                              @endforeach
+
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>Other Medications</td>
+                                            <td>
+
+                                              @foreach(unserialize($forum->medication_other_mult) as $m_o)
+                                                <span class="text-primary">{{ $m_o }}</span>
+                                              @endforeach
+
+                                            </td>
+                                          </tr>
+                                          </tbody>
+                                        </table>
+
+                                        <summary class="bg-warning p-3">
+                                          <b>{{ mb_ereg_replace('º', '', $forum->condition ) }} by <a href="#">{{ $forum->fullname }}</a></b>
+                                        </summary>
+
+                                      </details>
+
+                                      <a href="#">View my post <i class="ui icon arrow right"></i></a>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+
+                                <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                              @else
+                                <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                              @endif
+
                             @break
                             @case("administrator")
                               Hello Admin!
