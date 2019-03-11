@@ -51,5 +51,6 @@ Route::resources([
   'condition' => 'ConditionsAndSymptomsController',
   'medical' => 'MedicalInformationController',
   'profile' => 'ProfileController',
-  'forum' => 'ForumController'
+  'forum' => 'ForumController',
+  'comment' => 'CommentController',
 ]);

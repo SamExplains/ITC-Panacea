@@ -40,9 +40,9 @@
 
                               @if ($forum !== null)
 
-                                <div class="col-12 mx-auto mb-5  universal-box-shadow">
+                                <div class="col-12 mx-auto mb-5  universal-box-shadow  animated slideInDown">
 
-                                  <div class="row Feed">
+                                  <div class="row Feed ">
                                     <div class="col-md-2 col-12">
                                       <img src="{{Auth::user()->photo}}" class="ui image mini Feed-Image" style="" alt="">
                                     </div>
@@ -90,7 +90,7 @@
 
                                       </details>
 
-                                      <a href="{{route('forum.show', $forum->id)}}">View my post <i class="ui icon arrow right"></i></a>
+                                      <a href="{{route('forum.show', $forum->id)}}">View my latest post <i class="ui icon arrow right"></i></a>
 
                                     </div>
                                   </div>

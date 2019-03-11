@@ -15,6 +15,12 @@ class CreateCommentsTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('user_id');
+            $table->string('user_name');
+            $table->string('user_account_type');
+            $table->mediumText('user_photo');
+            $table->text('user_response');
+            $table->integer('physician_evaluation_score')->nullable();
             $table->timestamps();
         });
     }
