@@ -5,7 +5,7 @@
 <div class="Comment" style="position: relative; margin-bottom: 6rem">
 
   <p class="text-right offset-md-9 offset-6 col-md-3 col-6 Comment-User">
-    <span class="font-weight-bold">{{ $comment->user_name }}</span>
+    <span class="font-weight-bold">{{ $comment->user_name }} | <span class="font-weight-light">{{ $comment->user_account_type }}</span></span>
     <img class="ui avatar image ml-3" src="{{ $comment->user_photo }}">
   </p>
   <p>

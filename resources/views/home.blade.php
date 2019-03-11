@@ -179,6 +179,15 @@
                         @endif
                         <p class="mt-3">Here you can see a broad overview of your medical information in a informative and educational way.</p>
                         <p class="mt-3">Medical panel instruments like in the photo!</p>
+
+                        <hr>
+
+                        <h5 class="ui header font-weight-bold">Forum</h5>
+                        <p class="font-weight-light">The <b>Forum</b> is divided into <u>3 broad categories which are <span class="bg-warning p-2 font-weight-bold"> Mild, Moderate, Severe )</span></u></p>
+
+                        <h6 class="ui header">Popular Forum Conditions & Symptoms</h6>
+                        @include('forum.minimal')
+
                       </div>
 
                       <div class="col-md-4 col-12 mt-3">

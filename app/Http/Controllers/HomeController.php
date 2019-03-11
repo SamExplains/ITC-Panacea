@@ -31,7 +31,8 @@ class HomeController extends Controller
       $demograph_exist = Demographic::where('user_id', '=', \Auth::user()->id)->first();
       $medical_exist = MedicalInformation::where('user_id', '=', \Auth::user()->id)->first();
       $forum_exist = Forum::where('user_id', '=', \Auth::user()->id)->get()->last();
-      return view('home', ['demograph' => $demograph_exist, 'medical' => $medical_exist, 'forum' => $forum_exist]);
+      $top_forum_posts = Forum::all()->sortByDesc('comments')->take(2);
+      return view('home', ['demograph' => $demograph_exist, 'medical' => $medical_exist, 'forum' => $forum_exist, 'highlight' => $top_forum_posts]);
     }
 
     public function onSymptomAndConditionForm(){

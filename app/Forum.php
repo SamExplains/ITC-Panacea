@@ -12,6 +12,10 @@ class Forum extends Model
     return explode('º', $this->condition)[0];
   }
 
+  public function incrementViewCount() {
+
+  }
+
   public function returnColorCodedSeverity() {
 
     switch ($this->severity){

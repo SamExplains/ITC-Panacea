@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Forum;
 use Illuminate\Http\Request;
+use Faker\Generator as Faker;
 
 class ForumController extends Controller
 {
@@ -15,6 +16,7 @@ class ForumController extends Controller
     public function index()
     {
         //
+      return view('forum.home');
     }
 
     /**
@@ -38,17 +40,19 @@ class ForumController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+  /**
+   * Display the specified resource.
+   *
+   * @param  int $id
+   * @param Faker $faker
+   * @return \Illuminate\Http\Response
+   */
+    public function show($id, Faker $faker)
     {
         //
       $forum_details = Forum::find($id);
-      return view('forum.detailed', ['forum_item' => $forum_details]);
+      $forum_details->increment('views');
+      return view('forum.detailed', ['forum_item' => $forum_details, 'faker' => $faker]);
     }
 
     /**

@@ -35,9 +35,9 @@
       <h6 class="ui header bg-warning p-2">Medication</h6>
       <div class="p-2">
         <h6 class="ui header bg-info p-2">Medication Description</h6>
-        <p>{{ $forum_item->medication_desc }}</p>
+        <p class="lead">{{ $forum_item->medication_desc }}</p>
         <h6 class="ui header bg-info p-2">Medication Description Other</h6>
-        <p>{{ $forum_item->medication_other }}</p>
+        <p class="lead">{{ $forum_item->medication_other }}</p>
         <h6 class="ui header bg-info p-2">Additional Medication Treatments</h6>
         @foreach(unserialize($forum_item->medication_other_mult) as $m_o)
           <em class="font-weight-bold">{{ $m_o }}</em> <br>
@@ -53,7 +53,7 @@
 
       <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
 
-      @include('comment._reply');
+      @include('comment._reply')
 
     </div>
 
