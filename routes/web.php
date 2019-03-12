@@ -45,6 +45,7 @@ Route::get('/all/medication', 'SearchController@allMedicationsOther');
 /* Used to display all conditions & symptoms created by user */
 Route::get('profile/conditions', 'ProfileController@conditions')->name('profile.conditions');
 Route::get('profile/replys', 'ProfileController@replys')->name('profile.replys');
+Route::get('profile/evaluations', 'ProfileController@evaluations')->name('profile.evaluations');
 
 Route::resources([
   'demographic' => 'DemographicsController',

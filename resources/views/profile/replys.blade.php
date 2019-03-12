@@ -6,8 +6,13 @@
       <div class="row">
         <div class="col-md-8 col-12 mx-auto">
 
-          @foreach($replies as $comment )
+          @if(strtolower(Auth::user()->account) === "physician")
+            <div class="Comment" style="position: relative; margin-bottom: 3rem; margin-top: 3rem">
+              Physicians can not leave comments!
+            </div>
+          @endempty
 
+          @foreach($replies as $comment )
 
             <div class="Comment" style="position: relative; margin-bottom: 3rem; margin-top: 3rem">
               <a href="{{route('forum.show', $comment->forum_id)}}">Visit your comment here <i class="ui icon arrow right"></i></a>

@@ -33,10 +33,14 @@ class ProfileController extends Controller
       return view('profile.conditions_and_symptoms', ['posts' => $user_posts]);
     }
 
-  public function replys(){
-    $user_comments = Comment::all()->where('user_id', '=', \Auth::user()->id);
-    return view('profile.replys', ['replies' => $user_comments]);
-  }
+    public function replys(){
+      $user_comments = Comment::all()->where('user_id', '=', \Auth::user()->id);
+      return view('profile.replys', ['replies' => $user_comments]);
+    }
+
+    public function evaluations() {
+      return view('profile.evaluations');
+    }
 
     /**
      * Show the form for creating a new resource.
