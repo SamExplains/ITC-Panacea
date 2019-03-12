@@ -9,10 +9,10 @@
 
         <div class="col-10">
           <div>
-            <h3 class="ui header">{{ explode('º', $h->condition)[0] }}</h3>
+            <h3 class="ui header">{{ explode('º', $h->condition)[0] }} | <span class="ui label violet p-2">{{$h->severity}}</span> </h3>
             {{ $h->medication_desc }}
           </div>
-          <a href="{{route('forum.show', $h->id)}}" class="right aligned float-right"> <span>Total Views {{ $h->views }}</span> | View Users Post <i class="ui icon arrow right"></i></a>
+          <a href="{{route('forum.show', $h->id)}}" class="right aligned float-right"> <span>Total Views {{ $h->views }}</span> | View Post <i class="ui icon arrow right"></i></a>
         </div>
 
       </div>

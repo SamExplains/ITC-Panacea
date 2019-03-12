@@ -35,7 +35,12 @@
       <tbody>
       <tr>
         <td scope="row">Recent condition & symptom</td>
-        <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, libero?</a></td>
+        @isset($forum)
+          <td>{{ $forum->returnColorCodedSeverity() }} | {{ explode('º', $forum->condition)[0] }}</td>
+        @endisset
+        @if (!@isset($forum))
+          <td>You have not created any forum posts yet!</td>
+        @endif
       </tr>
       <tr>
         <td scope="row">Demographic Info</td>

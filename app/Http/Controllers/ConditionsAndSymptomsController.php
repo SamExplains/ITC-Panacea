@@ -67,7 +67,8 @@ class ConditionsAndSymptomsController extends Controller
         'consent' => 'required'
       ]);
 
-      $store = ( Forum::where('user_id', '=', \Auth::user()->id, 'and', 'condition', '=', $request->condition)->first() === null ? new Forum(): Forum::where('user_id', '=', \Auth::user()->id)->first() );
+//      $store = ( Forum::where('user_id', '=', \Auth::user()->id, 'and', 'condition', '=', $request->condition)->first() === null ? new Forum(): Forum::where('user_id', '=', \Auth::user()->id)->first() );
+      $store = new Forum();
       $store->user_id = $request->user_id;
       $store->fullname = $request->fullname;
       $store->age = $request->age;

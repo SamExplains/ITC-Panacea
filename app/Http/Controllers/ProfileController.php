@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
+use App\Forum;
 use App\MedicalInformation;
 use Illuminate\Http\Request;
 use Faker\Generator as Faker;
@@ -27,13 +29,13 @@ class ProfileController extends Controller
     }
 
     public function conditions(){
-
-      return view('profile.conditions_and_symptoms');
+      $user_posts = Forum::all()->where('user_id', '=', \Auth::user()->id);
+      return view('profile.conditions_and_symptoms', ['posts' => $user_posts]);
     }
 
   public function replys(){
-
-    return view('profile.replys');
+    $user_comments = Comment::all()->where('user_id', '=', \Auth::user()->id);
+    return view('profile.replys', ['replies' => $user_comments]);
   }
 
     /**
