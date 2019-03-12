@@ -9,7 +9,7 @@
       datasets: [{
         label: 'Severity Types',
         data: [0, 12, 19, 3],
-        backgroundColor: "#9561e2",
+        backgroundColor: ["#69AD77", "#1789FC", "#FFC747", "#DB5461"],
         // borderColor: [
         //   "",
         //   "rgba(0,0,0,.7)",
@@ -20,7 +20,7 @@
         labels: ['One'],
         label: 'Total Data',
         data: [50],
-        backgroundColor: "#52DE6D"
+        backgroundColor: "#69AD77"
       }]
     }
   });

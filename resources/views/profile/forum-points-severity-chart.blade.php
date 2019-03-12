@@ -7,9 +7,9 @@
     data: {
       labels: ['Total','Mild Score', 'Moderate Score', 'Severe Score'],
       datasets: [{
-        label: 'Severity Types Score',
+        label: ['Total', 'Mild', 'Moderate', 'Severe'],
         data: [0, 25, 5, 20],
-        backgroundColor: "#9561e2",
+        backgroundColor: ["#9561e2", "#1789FC", "#FFC747", "#DB5461"],
         // borderColor: [
         //   "",
         //   "rgba(0,0,0,.7)",
@@ -17,10 +17,9 @@
         //   "rgba(0,0,0,.7)",
         // ],
       }, {
-        labels: ['One'],
-        label: 'Total Points',
-        data: [50],
-        backgroundColor: "#52DE6D"
+         label: 'Total Points',
+         data: [50],
+         backgroundColor: "#69AD77"
       }]
     }
   });
