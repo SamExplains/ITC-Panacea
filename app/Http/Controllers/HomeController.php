@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Demographic;
 use App\Forum;
 use App\MedicalInformation;
+use App\PhysicianRecord;
 use http\Env\Response;
 use Illuminate\Http\Request;
 
@@ -32,7 +33,8 @@ class HomeController extends Controller
       $medical_exist = MedicalInformation::where('user_id', '=', \Auth::user()->id)->first();
       $forum_exist = Forum::where('user_id', '=', \Auth::user()->id)->get()->last();
       $top_forum_posts = Forum::all()->sortByDesc('comments')->take(2);
-      return view('home', ['demograph' => $demograph_exist, 'medical' => $medical_exist, 'forum' => $forum_exist, 'highlight' => $top_forum_posts]);
+      $p_records = PhysicianRecord::where('physician_user_id', '=', \Auth::user()->id)->take(3)->get();
+      return view('home', ['demograph' => $demograph_exist, 'medical' => $medical_exist, 'forum' => $forum_exist, 'highlight' => $top_forum_posts, 'records' => $p_records]);
     }
 
     public function onSymptomAndConditionForm(){

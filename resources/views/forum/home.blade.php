@@ -1,4 +1,8 @@
-@extends('layouts.app)
+@extends('layouts.app')
 @section('content')
-  Home Forum
+  <div class="container">
+    <div class="row">
+      Home Forum
+    </div>
+  </div>
 @stop

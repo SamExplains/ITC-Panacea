@@ -95,6 +95,7 @@ class CommentController extends Controller
       $p_record = new PhysicianRecord();
       $p_record->forum_id = $id;
       $p_record->comment_id = $request->get('cid');
+      $p_record->physician_user_id = $request->get('puid');
       $p_record->physician_evaluation_score = $request->get('_score');
       $p_record->save();
       return response(['Updated']);

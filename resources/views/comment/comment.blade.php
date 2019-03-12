@@ -5,7 +5,7 @@
 <div class="Comment" style="position: relative; margin-bottom: 6rem">
 
   <p class="text-right offset-md-9 offset-6 col-md-3 col-6 Comment-User">
-    <span class="font-weight-bold">CommentID: {{ $comment->id }}, {{ $comment->user_name }} | <span class="font-weight-light">{{ $comment->user_account_type }}</span></span>
+    <span class="font-weight-bold">{{ $comment->user_name }} | <span class="font-weight-light">{{ $comment->user_account_type }}</span></span>
     <img class="ui avatar image ml-3" src="{{ $comment->user_photo }}">
   </p>
   <p>
@@ -62,7 +62,7 @@
         $.ajax({
           method: "PATCH",
           url: "{{ route('comment.update', $forum_id)  }}",
-          data: {_token: "{{ csrf_token() }}", cid: cid, _score: b_val},
+          data: {_token: "{{ csrf_token() }}", cid: cid, puid:"{{ Auth::user()->id }}", _score: b_val},
           success: (response) => {
             console.warn(response);
             const _voted_template = `<p class="text-right animated slideInLeft my-auto"><img src="{{asset('images/defaults/checkmark_gr.svg')}}" class="d-inline-block" style="width: 1rem !important; height: 1rem !important;" > Thank you for your validation doctor!</p>`;

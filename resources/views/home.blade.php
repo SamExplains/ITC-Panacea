@@ -125,6 +125,11 @@
 
                         @else
                           <h5 class="ui header font-weight-bold">Physician Evaluation Latest</h5>
+                          @foreach($records as $r)
+                            <div class="Comment" style="position: relative; margin-bottom: 1rem; margin-top: 1rem">
+                              <p>You gave this user response a evaluation score of <b class="bg-success p-1">{{ $r->physician_evaluation_score }}</b> <a class="float-right" href="{{route('forum.show', $r->forum_id )}}">View this post <i class="ui icon arrow right"></i></a></p>
+                            </div>
+                          @endforeach
                         @endif
 
                       </div>
@@ -147,19 +152,22 @@
 
                       </div>
 
-                      <div class="col-md-3 mt-3">
-                        <h5 class="ui header font-weight-bold">Your questions asked</h5>
-                        Pie chart!
+                      <div class="col-md-4 mt-3">
+                        {{--<h5 class="ui header font-weight-bold">Your questions asked</h5>--}}
+                        <h5 class="ui header font-weight-bold">Points Breakdown by Severity</h5>
+                        @include('profile.forum-points-severity-chart')
                       </div>
 
-                      <div class="col-md-3 mt-3">
-                        <h5 class="ui header font-weight-bold">Responses recieved per question & points & physician scores!</h5>
-                        <p>Bar chart</p>
+                      <div class="col-md-4 mt-3">
+                        {{--<h5 class="ui header font-weight-bold">Responses recieved per question & points & physician scores!</h5>--}}
+                        <h5 class="ui header font-weight-bold">Forum Breakdown</h5>
+                        @include('profile.categories-chart')
                       </div>
 
-                      <div class="col-md-6 mt-3">
-                        <h5 class="ui header font-weight-bold">Popular Questions</h5>
-                        <p>Bar chart</p>
+                      <div class="col-md-4 mt-3">
+                        {{--<h5 class="ui header font-weight-bold">Popular Questions</h5>--}}
+                        <h5 class="ui header font-weight-bold">Registration Breakdown</h5>
+                        @include('profile.registration-chart')
                       </div>
 
                       <div class="col-md-8 mt-3">

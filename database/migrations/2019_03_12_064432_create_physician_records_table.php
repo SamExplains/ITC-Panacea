@@ -17,6 +17,7 @@ class CreatePhysicianRecordsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('forum_id');
             $table->integer('comment_id');
+            $table->integer('physician_user_id');
             $table->integer('physician_evaluation_score');
             $table->timestamps();
         });

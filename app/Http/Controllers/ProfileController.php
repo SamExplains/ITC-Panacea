@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Comment;
 use App\Forum;
 use App\MedicalInformation;
+use App\PhysicianRecord;
 use Illuminate\Http\Request;
 use Faker\Generator as Faker;
 
@@ -39,7 +40,8 @@ class ProfileController extends Controller
     }
 
     public function evaluations() {
-      return view('profile.evaluations');
+      $p_records = PhysicianRecord::where('physician_user_id', '=', \Auth::user()->id)->get();
+      return view('profile.evaluations', ['records' => $p_records]);
     }
 
     /**

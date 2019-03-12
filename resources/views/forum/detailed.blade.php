@@ -51,9 +51,10 @@
 
       <hr>
 
-      <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
-
-      @include('comment._reply')
+      @if (Auth::user()->account !== "physician")
+        <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
+        @include('comment._reply')
+      @endif
 
     </div>
 
