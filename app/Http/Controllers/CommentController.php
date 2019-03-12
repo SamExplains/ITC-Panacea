@@ -85,6 +85,12 @@ class CommentController extends Controller
     public function update(Request $request, $id)
     {
         //
+      $f_found = Forum::where('id', '=', $id)->first();
+      $f_found->increment('evaluation_score', $request->get('_score'));
+      $c_found = Comment::where('id', '=', $request->get('cid'))->first();
+      $c_found->increment('physician_evaluation_score', $request->get('_score'));
+
+      return response(['Updated']);
     }
 
     /**

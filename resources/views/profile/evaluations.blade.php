@@ -7,7 +7,9 @@
 
         <div class="col-md-8 col-12 mx-auto">
 
-          You evaluations content here...
+          <div class="Comment" style="position: relative; margin-bottom: 3rem; margin-top: 3rem">
+            You evaluations content here...
+          </div>
 
         </div>
 

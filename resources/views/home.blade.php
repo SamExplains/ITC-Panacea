@@ -21,105 +21,112 @@
 
                     <div class="row">
                       <div class="col-md-6">
-                        <h5 class="ui header font-weight-bold">Conditions & Symptoms</h5>
+                        @if (strtolower(Auth::user()->account) !== "physician")
 
-                        @if ($demograph === null || $medical === null && Auth::user()->account === "patient")
-                          <div class="bg-light p-3">
-                            <img src="{{asset('images/defaults/caution.svg')}}" class="ui image mini centered mb-3" alt="">
-                            <h6 class="ui header">Notification</h6>
-                            <p>
-                              You must complete your <a href="{{route('demographic.create')}}">Demographic</a> and <a href="{{route('medical.create')}}">Medical Information</a>
-                              before being qualified to make a post as a patient!
-                            </p>
-                          </div>
-                        @else
+                          <h5 class="ui header font-weight-bold">Conditions & Symptoms</h5>
 
-                          @switch(Auth::user()->account)
+                            @if ($demograph === null || $medical === null && Auth::user()->account === "patient")
+                              <div class="bg-light p-3">
+                                <img src="{{asset('images/defaults/caution.svg')}}" class="ui image mini centered mb-3" alt="">
+                                <h6 class="ui header">Notification</h6>
+                                <p>
+                                  You must complete your <a href="{{route('demographic.create')}}">Demographic</a> and <a href="{{route('medical.create')}}">Medical Information</a>
+                                  before being qualified to make a post as a patient!
+                                </p>
+                              </div>
+                            @else
 
-                            @case("patient")
+                              @switch(Auth::user()->account)
 
-                              @if ($forum !== null)
+                                @case("patient")
 
-                                <div class="col-12 mx-auto mb-5  universal-box-shadow  animated slideInDown">
+                                @if ($forum !== null)
 
-                                  <div class="row Feed ">
-                                    <div class="col-md-2 col-12">
-                                      <img src="{{Auth::user()->photo}}" class="ui image mini Feed-Image" style="" alt="">
+                                  <div class="col-12 mx-auto mb-5  universal-box-shadow  animated slideInDown">
+
+                                    <div class="row Feed ">
+                                      <div class="col-md-2 col-12">
+                                        <img src="{{Auth::user()->photo}}" class="ui image mini Feed-Image" style="" alt="">
+                                      </div>
+                                      <div class="col-md-10 col-12">
+                                        <details class="mb-3">
+
+                                          <table class="table">
+                                            <thead>
+                                            <tr>
+                                              <th>Name</th>
+                                              <th>Detail</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                              <td>Severity</td>
+                                              <td class="text-danger">{{ $forum->severity }}</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Symptoms Described</td>
+                                              <td>
+
+                                                @foreach(unserialize($forum->symptoms) as $s)
+                                                  <span class="text-primary">{{ $s }}</span><br>
+                                                @endforeach
+
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>Other Medications</td>
+                                              <td>
+
+                                                @foreach(unserialize($forum->medication_other_mult) as $m_o)
+                                                  <span class="text-primary">{{ $m_o }}</span> <br>
+                                                @endforeach
+
+                                              </td>
+                                            </tr>
+                                            </tbody>
+                                          </table>
+
+                                          <summary class="bg-warning p-3">
+                                            <b>{{ mb_ereg_replace('º', '', $forum->condition ) }} by <a href="#">{{ $forum->fullname }}</a></b>
+                                          </summary>
+
+                                        </details>
+
+                                        <a href="{{route('forum.show', $forum->id)}}">View my latest post <i class="ui icon arrow right"></i></a>
+
+                                      </div>
                                     </div>
-                                    <div class="col-md-10 col-12">
-                                      <details class="mb-3">
 
-                                        <table class="table">
-                                          <thead>
-                                          <tr>
-                                            <th>Name</th>
-                                            <th>Detail</th>
-                                          </tr>
-                                          </thead>
-                                          <tbody>
-                                          <tr>
-                                            <td>Severity</td>
-                                            <td class="text-danger">{{ $forum->severity }}</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Symptoms Described</td>
-                                            <td>
-
-                                              @foreach(unserialize($forum->symptoms) as $s)
-                                                <span class="text-primary">{{ $s }}</span><br>
-                                              @endforeach
-
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td>Other Medications</td>
-                                            <td>
-
-                                              @foreach(unserialize($forum->medication_other_mult) as $m_o)
-                                                <span class="text-primary">{{ $m_o }}</span> <br>
-                                              @endforeach
-
-                                            </td>
-                                          </tr>
-                                          </tbody>
-                                        </table>
-
-                                        <summary class="bg-warning p-3">
-                                          <b>{{ mb_ereg_replace('º', '', $forum->condition ) }} by <a href="#">{{ $forum->fullname }}</a></b>
-                                        </summary>
-
-                                      </details>
-
-                                      <a href="{{route('forum.show', $forum->id)}}">View my latest post <i class="ui icon arrow right"></i></a>
-
-                                    </div>
                                   </div>
 
-                                </div>
+                                  <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                  <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                  <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                  <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                @else
+                                  <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
+                                @endif
 
-                                <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                                <a href="#" class="d-block">Your conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                                <a href="#" class="d-block">Edit conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                                <a href="#" class="d-block">Delete conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                              @else
-                                <a href="{{route('condition.index')}}" class="d-block">New conditions w/ symptoms<i class="ml-3 ui arrow right icon"></i></a>
-                              @endif
+                                @break
+                                @case("administrator")
+                                Hello Admin!
+                                @break
+                                @case("physician")
+                                Hello Physician!
+                                @break
 
-                            @break
-                            @case("administrator")
-                              Hello Admin!
-                            @break
-                            @case("physician")
-                              Hello Physician!
-                            @break
+                              @endswitch
 
-                          @endswitch
+                            @endif
 
+                          <p class="mt-3">
+                            Here you can manage your existing conditions & symptoms or simply create new conditions & symptoms that you may have.
+                          </p>
+
+                        @else
+                          <h5 class="ui header font-weight-bold">Physician Evaluation Latest</h5>
                         @endif
 
-                        <p class="mt-3">
-                          Here you can manage your existing conditions & symptoms or simply create new conditions & symptoms that you may have.
-                        </p>
                       </div>
 
                       <div class="col-md-6">

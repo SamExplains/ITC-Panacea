@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Forum;
 use Illuminate\Http\Request;
 use Faker\Generator as Faker;
@@ -50,9 +51,10 @@ class ForumController extends Controller
     public function show($id, Faker $faker)
     {
         //
-      $forum_details = Forum::find($id);
+      $forum_details = Forum::findOrFail($id);
       $forum_details->increment('views');
-      return view('forum.detailed', ['forum_item' => $forum_details, 'faker' => $faker]);
+      $forum_comments = Comment::where('forum_id', '=', $id)->get();
+      return view('forum.detailed', ['forum_item' => $forum_details,'comments' => $forum_comments, 'faker' => $faker]);
     }
 
     /**

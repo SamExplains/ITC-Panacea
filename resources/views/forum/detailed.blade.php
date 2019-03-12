@@ -47,7 +47,7 @@
       <h6 class="ui header bg-warning p-2">Comments</h6>
 
       {{-- Comments --}}
-      @include('comment.comment')
+      @include('comment.comment' , ['forum_id' => $forum_item->id])
 
       <hr>
 
