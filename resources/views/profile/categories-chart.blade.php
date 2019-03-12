@@ -8,7 +8,7 @@
       labels: ['Total','Mild', 'Moderate', 'Severe'],
       datasets: [{
         label: 'Severity Types',
-        data: [0, 12, 19, 3],
+        data: [0, {{ $t_mild_posts }}, {{ $t_moderate_posts }}, {{ $t_severe_posts }}],
         backgroundColor: ["#69AD77", "#1789FC", "#FFC747", "#DB5461"],
         // borderColor: [
         //   "",
@@ -19,7 +19,7 @@
       }, {
         labels: ['One'],
         label: 'Total Data',
-        data: [50],
+        data: [{{ $t_posts }}],
         backgroundColor: "#69AD77"
       }]
     }

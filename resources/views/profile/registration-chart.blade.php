@@ -8,11 +8,11 @@
       labels: ["Total",'Patients', 'Administrators', 'Physicians'],
       datasets: [{
         label: 'User Types',
-        data: [0, 3, 2, 1],
+        data: [0, {{ $t_patient_users }}, {{ $t_administrator_users }}, {{ $t_physician_users }}],
         backgroundColor: [ "#69AD77", "#1789FC", "#FFC747", "#DB5461"],
       }, {
         label: 'Total Users',
-        data: [5],
+        data: [{{ $t_users }}],
         backgroundColor: "rgba(105, 173, 119, 0.31)"
       }]
     }

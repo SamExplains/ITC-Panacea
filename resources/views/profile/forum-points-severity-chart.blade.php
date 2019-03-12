@@ -8,17 +8,11 @@
       labels: ['Total','Mild Score', 'Moderate Score', 'Severe Score'],
       datasets: [{
         label: ['Total', 'Mild', 'Moderate', 'Severe'],
-        data: [0, 25, 5, 20],
+        data: [0, "{{ $p_mild_total }}", "{{ $p_moderate_total }}", "{{ $p_severe_total }}"],
         backgroundColor: ["#9561e2", "#1789FC", "#FFC747", "#DB5461"],
-        // borderColor: [
-        //   "",
-        //   "rgba(0,0,0,.7)",
-        //   "rgba(0,0,0,.7)",
-        //   "rgba(0,0,0,.7)",
-        // ],
       }, {
          label: 'Total Points',
-         data: [50],
+         data: ["{{ $p_total }}"],
          backgroundColor: "#69AD77"
       }]
     }
