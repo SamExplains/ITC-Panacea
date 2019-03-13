@@ -35,7 +35,7 @@ class HomeController extends Controller
       $medical_exist = MedicalInformation::where('user_id', '=', \Auth::user()->id)->first();
       $forum_exist = Forum::where('user_id', '=', \Auth::user()->id)->get()->last();
       $top_forum_posts = Forum::all()->sortByDesc('comments')->take(2);
-      $p_records = PhysicianRecord::where('physician_user_id', '=', \Auth::user()->id)->take(3)->get();
+      $p_records = PhysicianRecord::orderBy('id', 'DESC')->where('physician_user_id', '=', \Auth::user()->id)->take(3)->get();
 
       /* Points for charts */
       $total_points = Forum::sum('evaluation_score');

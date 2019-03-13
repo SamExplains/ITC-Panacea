@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,18 +56,18 @@
           <entry key="env" value="16" />
           <entry key="js" value="580" />
           <entry key="json" value="73" />
-          <entry key="php" value="35116" />
+          <entry key="php" value="35265" />
           <entry key="scss" value="1741" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="25229" />
+          <entry key="Blade" value="25309" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="21" />
           <entry key="JavaScript" value="580" />
-          <entry key="PHP" value="9884" />
+          <entry key="PHP" value="9953" />
           <entry key="SCSS" value="1741" />
           <entry key="composer.json" value="52" />
         </counts>
@@ -80,7 +80,7 @@
           <entry key="jpg" value="4" />
           <entry key="js" value="30" />
           <entry key="json" value="6" />
-          <entry key="php" value="393" />
+          <entry key="php" value="394" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="36" />
           <entry key="svg" value="5" />
@@ -90,7 +90,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="152" />
+          <entry key="Blade" value="153" />
           <entry key="CSS" value="1" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="3" />
@@ -108,23 +108,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="80" />
+            <state relative-caret-position="506">
+              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="72" column="77" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -138,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            <state relative-caret-position="462">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#673#740#0#HTML" expanded="true" />
                 <element signature="e#870#937#0#HTML" expanded="true" />
@@ -177,6 +168,7 @@
       <find>production</find>
       <find>Popular</find>
       <find>Conditions</find>
+      <find>physician</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,7 +215,6 @@
         <option value="$PROJECT_DIR$/resources/views/profile/forum-points-severity-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/categories-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/registration-chart.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/replys.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" />
@@ -236,6 +227,7 @@
         <option value="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -548,12 +540,12 @@
       <workItem from="1552360981412" duration="9549000" />
       <workItem from="1552376944973" duration="3215000" />
       <workItem from="1552421396393" duration="2604000" />
-      <workItem from="1552428583098" duration="8473000" />
+      <workItem from="1552428583098" duration="12326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148434000" />
+    <option name="totallyTimeSpent" value="152287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +560,7 @@
     <frame x="0" y="23" width="2767" height="1548" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1160221" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1160221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -809,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/comment/comment.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="39" column="99" lean-forward="true" selection-start-line="39" selection-start-column="99" selection-end-line="39" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
@@ -882,16 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="80" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/severe.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -913,13 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="72" column="77" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/minimal.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
@@ -934,13 +902,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/comment/comment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="462">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#673#740#0#HTML" expanded="true" />
             <element signature="e#870#937#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

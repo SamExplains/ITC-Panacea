@@ -36,7 +36,7 @@
         <button class="ui button green fluid mb-3">{{ $forum_item->views }} views</button>
       </div>
 
-      <div class="row" style="position: absolute; right: 1rem; top: 10.5rem; opacity: .75">
+      <div class="row" style="position: absolute; right: 1rem; top: 9.5rem; opacity: .75">
         <button class="ui button green fluid mb-3">{{ $forum_item->evaluation_score }} out of {{ count($comments) * 3 }} MAX Score | Score</button>
         <button class="ui button red fluid mb-3">{{ $forum_item->likes }} | Likes</button>
         <button class="ui button orange fluid mb-3">{{ $forum_item->helpful }} | Helpful</button>
