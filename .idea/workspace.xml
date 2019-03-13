@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +79,7 @@
           <entry key="php" value="394" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="36" />
+          <entry key="sql" value="1" />
           <entry key="svg" value="5" />
           <entry key="vue" value="2" />
         </counts>
@@ -99,6 +96,7 @@
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="36" />
+          <entry key="SQL" value="1" />
           <entry key="SVG" value="5" />
           <entry key="Vue.js" value="2" />
           <entry key="composer.json" value="3" />
@@ -108,7 +106,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
@@ -116,6 +114,15 @@
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/panacea-data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="3439" column="86" lean-forward="true" selection-start-line="3439" selection-start-column="86" selection-end-line="3439" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -177,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_09_234149_add_photo_to_users.php" />
@@ -228,6 +234,7 @@
         <option value="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/panacea-data.sql" />
       </list>
     </option>
   </component>
@@ -344,32 +351,6 @@
             <path>
               <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
               <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
@@ -540,12 +521,12 @@
       <workItem from="1552360981412" duration="9549000" />
       <workItem from="1552376944973" duration="3215000" />
       <workItem from="1552421396393" duration="2604000" />
-      <workItem from="1552428583098" duration="12326000" />
+      <workItem from="1552428583098" duration="12409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152287000" />
+    <option name="totallyTimeSpent" value="152370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,7 +541,7 @@
     <frame x="0" y="23" width="2767" height="1548" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1160221" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1160221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -590,13 +571,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/MedicationOther.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Symptom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -937,6 +911,13 @@
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panacea-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="3439" column="86" lean-forward="true" selection-start-line="3439" selection-start-column="86" selection-end-line="3439" selection-end-column="86" />
         </state>
       </provider>
     </entry>
