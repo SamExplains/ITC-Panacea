@@ -30,6 +30,122 @@
       <div class="row p-3 Forum-User">
         <img class="ui avatar image my-auto" src="{{ $forum_item->u_photo }}">
         <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.</span>
+
+        @if (strtolower(Auth::user()->account) === "physician")
+          <button class="ui circular button yellow small ml-3" onclick="showUsersMedicalProfile()">
+            <i class="ui icon folder"></i> Show Medical Profile
+          </button>
+
+          <div class="col-12 p-3 d-none ui form mt-3 animated fadeInUp" id="MedicalInformation">
+
+            <h6 class="ui header bg-warning p-2">Demographic Information</h6>
+            <div class="ui four fields">
+              <div class="field">
+                <label for="">Age</label>
+                <input id="age" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Country</label>
+                <input id="country" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Race</label>
+                <input id="race" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Gender</label>
+                <input id="gender" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+            </div>
+
+            <h6 class="ui header bg-warning p-2">Medical Information</h6>
+
+            <div class="ui four fields">
+              <div class="field">
+                <label for="">D.O.B</label>
+                <input id="dob" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">State</label>
+                <input id="state" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Health Insurance Name</label>
+                <input id="hin" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Health Insurance Phone</label>
+                <input id="hinp" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="ui four fields">
+              <div class="field">
+                <label for="">Physician Name</label>
+                <input id="pn" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Physician Phone</label>
+                <input id="pp" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Physician Clinic Name</label>
+                <input id="pcn" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+              <div class="field">
+                <label for="">Physician Clinic Phone</label>
+                <input id="pcp" class="input disabled" type="text" name="fullname"  title="Fullname" readonly>
+              </div>
+            </div>
+
+
+
+            Demographic
+            Age
+            Country
+
+            Medical
+            DOB
+            State, Health Insurance Name Phone and Physician Name Phone, Clinic Name Phone
+
+          </div>
+
+          <script>
+            function showUsersMedicalProfile() {
+              console.warn('showUsersMedicalProfile');
+              const mi = $('#MedicalInformation');
+              mi.toggleClass('d-none');
+
+              /* search.medical */
+              $.ajax({
+                method: "GET",
+                url: "{{ route('search.medical', $forum_item->user_id)  }}",
+                data: {_token: "{{ csrf_token() }}"},
+                success: (response) => {
+                  console.warn(response);
+                  $('#age').val(response.user.age);
+                  $('#country').val(response.user.country);
+                  $('#race').val(response.user.race);
+                  $('#gender').val(response.user.gender);
+
+                  $('#dob').val(response.user.dob);
+                  $('#state').val(response.user.state);
+                  $('#hin').val(response.user.health_insurance_name);
+                  $('#hinp').val(response.user.health_insurance_phone);
+                  $('#pn').val(response.user.health_insurance_physician_name);
+                  $('#pp').val(response.user.health_insurance_physician_phone);
+                  $('#pcn').val(response.user.health_insurance_physician_clinic);
+                  $('#pcp').val(response.user.health_insurance_physician_clinic_phone);
+                }
+              });
+
+            }
+          </script>
+
+        @endif
+
       </div>
 
       <div class="row" style="position: absolute; right: 1rem; top: 5.25rem; opacity: .75">
