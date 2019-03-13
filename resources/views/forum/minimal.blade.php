@@ -1,7 +1,7 @@
 <div class="container">
   @isset($highlight)
     @foreach($highlight as $h)
-      <div class="row bg-warning p-4 mb-3">
+      <div class="row bg-warning p-4 mt-3">
 
         <div class="col-2 my-auto">
           <img src="{{ $h->u_photo }}" class="ui image tiny img-responsive" style="object-fit: cover; object-position: center; border-radius: 25rem; width: 100% !important; height: 7rem !important;"  alt="">

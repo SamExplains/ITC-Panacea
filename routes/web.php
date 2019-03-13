@@ -47,6 +47,11 @@ Route::get('profile/conditions', 'ProfileController@conditions')->name('profile.
 Route::get('profile/replys', 'ProfileController@replys')->name('profile.replys');
 Route::get('profile/evaluations', 'ProfileController@evaluations')->name('profile.evaluations');
 
+/* Forum Filters */
+Route::get('forum/mild', 'ForumController@mild')->name('forum.mild');
+Route::get('forum/moderate', 'ForumController@moderate')->name('forum.moderate');
+Route::get('forum/severe', 'ForumController@severe')->name('forum.severe');
+
 Route::resources([
   'demographic' => 'DemographicsController',
   'condition' => 'ConditionsAndSymptomsController',

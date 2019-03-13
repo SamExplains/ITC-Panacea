@@ -25,7 +25,7 @@
 
                           <h5 class="ui header font-weight-bold">Conditions & Symptoms</h5>
 
-                            @if ($demograph === null || $medical === null && Auth::user()->account === "patient")
+                            @if ($demograph === null && $medical === null && Auth::user()->account === "patient")
                               <div class="bg-light p-3">
                                 <img src="{{asset('images/defaults/caution.svg')}}" class="ui image mini centered mb-3" alt="">
                                 <h6 class="ui header">Notification</h6>
@@ -108,9 +108,15 @@
                                 @endif
 
                                 @break
+
                                 @case("administrator")
-                                Hello Admin!
+
+                                  <div class="Comment">
+                                    Admins are not allowed to create a new condition or symptom!
+                                  </div>
+
                                 @break
+
                                 @case("physician")
                                 Hello Physician!
                                 @break

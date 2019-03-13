@@ -3,8 +3,12 @@
     <div class="col-md-8 col-12 mx-auto">
       <div class="ui top attached tabular menu">
         <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile' ? 'active' : '')  }}" href="{{url('profile')}}">Profile</a>
+
+        @if(strtolower(Auth::user()->account) === "patient")
         <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/conditions' ? 'active' : '')  }}" href="{{route('profile.conditions')}}">Conditions & Symptoms</a>
         <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/replys' ? 'active' : '')  }}" href="{{route('profile.replys')}}">Replys</a>
+        @endif
+
         @if(strtolower(Auth::user()->account) === "physician")
           <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/evaluations' ? 'active' : '')  }}" href="{{route('profile.evaluations')}}">Evaluations</a>
         @endempty

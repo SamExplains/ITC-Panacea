@@ -17,7 +17,23 @@ class ForumController extends Controller
     public function index()
     {
         //
-      return view('forum.home');
+//      return view('forum.home');
+      return redirect()->route('forum.mild');
+    }
+
+    public function mild() {
+      $total_mild_posts = Forum::all()->where('severity', '=', 'mild');
+      return view('forum.mild', ['mild' => $total_mild_posts]);
+    }
+
+    public function moderate() {
+      $total_moderate_posts = Forum::all()->where('severity', '=', 'moderate');
+      return view('forum.moderate', ['moderate' => $total_moderate_posts]);
+    }
+
+    public function severe() {
+      $total_severe_posts = Forum::all()->where('severity', '=', 'severe');
+      return view('forum.severe', ['severe' => $total_severe_posts]);
     }
 
     /**
