@@ -9,7 +9,19 @@
 
         <div class="col-10">
           <div>
-            <h3 class="ui header">{{ explode('º', $h->condition)[0] }} | <span class="ui label violet p-2">{{$h->severity}}</span> </h3>
+            @switch($h->severity)
+              @case("mild")
+                <h3 class="ui header">{{ explode('º', $h->condition)[0] }} | <span class="ui label violet p-2"> <i class="ui icon circle blue"></i> {{$h->severity}}</span> </h3>
+              @break
+
+              @case("moderate")
+                <h3 class="ui header">{{ explode('º', $h->condition)[0] }} | <span class="ui label violet p-2"> <i class="ui icon circle yellow"></i> {{$h->severity}}</span> </h3>
+              @break
+
+              @case("severe")
+              <h3 class="ui header">{{ explode('º', $h->condition)[0] }} | <span class="ui label violet p-2"> <i class="ui icon circle red"></i> {{$h->severity}}</span> </h3>
+              @break
+            @endswitch
             {{ $h->medication_desc }}
           </div>
           <a href="{{route('forum.show', $h->id)}}" class="right aligned float-right"> <span>Total Views {{ $h->views }}</span> | View Post <i class="ui icon arrow right"></i></a>

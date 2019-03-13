@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/mild.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/mild.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/moderate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/moderate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forum/severe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/severe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,14 +56,14 @@
           <entry key="env" value="16" />
           <entry key="js" value="580" />
           <entry key="json" value="73" />
-          <entry key="php" value="34744" />
+          <entry key="php" value="35116" />
           <entry key="scss" value="1741" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="24857" />
+          <entry key="Blade" value="25229" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="21" />
           <entry key="JavaScript" value="580" />
@@ -87,7 +80,7 @@
           <entry key="jpg" value="4" />
           <entry key="js" value="30" />
           <entry key="json" value="6" />
-          <entry key="php" value="389" />
+          <entry key="php" value="393" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="36" />
           <entry key="svg" value="5" />
@@ -97,7 +90,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="Blade" value="148" />
+          <entry key="Blade" value="152" />
           <entry key="CSS" value="1" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="3" />
@@ -130,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="609">
+              <caret line="72" column="77" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -139,17 +132,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/forum/navigation.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="205">
+              <caret line="5" column="88" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/forum/minimal.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="891">
+              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <element signature="e#673#740#0#HTML" expanded="true" />
+                <element signature="e#870#937#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,7 +216,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/evaluations.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/comment/comment.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/forum-categories-chart.blade.php" />
@@ -233,12 +229,13 @@
         <option value="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/home.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/mild.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/moderate.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/severe.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ForumController.php" />
+        <option value="$PROJECT_DIR$/resources/views/forum/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/minimal.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
       </list>
     </option>
   </component>
@@ -490,7 +487,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ForumControlle&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeController&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;_var&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/_variables.scss&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;commen&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;deta&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/forum/detailed.blade.php&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;ForumCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;Forum&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;CommentCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;Comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;navigation&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/navigation.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ProfileCon&#9;null&#9;null&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ForumCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;database.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/config/database.php&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;HomeCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Condit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medic&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/app.js&#10;web.p&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="Forum&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ForumControlle&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeController&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;_var&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/_variables.scss&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;commen&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;deta&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/forum/detailed.blade.php&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;ForumCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;CommentCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;Comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;navigation&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/navigation.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ProfileCon&#9;null&#9;null&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ForumCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;database.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/config/database.php&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;HomeCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Condit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medic&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/app.js&#10;web.p&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;welcome&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -551,12 +548,12 @@
       <workItem from="1552360981412" duration="9549000" />
       <workItem from="1552376944973" duration="3215000" />
       <workItem from="1552421396393" duration="2604000" />
-      <workItem from="1552428583098" duration="6625000" />
+      <workItem from="1552428583098" duration="8473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146586000" />
+    <option name="totallyTimeSpent" value="148434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
@@ -909,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/moderate.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -930,17 +913,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forum/navigation.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        <state relative-caret-position="609">
+          <caret line="72" column="77" selection-start-line="72" selection-start-column="69" selection-end-line="72" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/minimal.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="851">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forum/navigation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="5" column="88" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#673#740#0#HTML" expanded="true" />
+            <element signature="e#870#937#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

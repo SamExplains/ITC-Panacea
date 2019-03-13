@@ -4,19 +4,40 @@
 
   <div class="ui grid container bg-light Forum">
 
-    <div class="sixteen wide column" style="position: relative">
+    <div class="sixteen wide column">
+
+      @switch($forum_item->severity)
+        @case("mild")
+          <div class="row bg-dark mb-3">
+            <a href="{{route('forum.mild')}}" class="text-white p-2">Back to {{ $forum_item->severity }} <i class="ui icon left arrow"></i></a>
+          </div>
+        @break
+
+        @case("moderate")
+          <div class="row bg-dark mb-3">
+            <a href="{{route('forum.moderate')}}" class="text-white p-2">Back to {{ $forum_item->severity }} <i class="ui icon left arrow"></i></a>
+          </div>
+        @break
+
+        @case("severe")
+          <div class="row bg-dark mb-3">
+            <a href="{{route('forum.severe')}}" class="text-white p-2">Back to {{ $forum_item->severity }} <i class="ui icon left arrow"></i></a>
+          </div>
+        @break
+
+      @endswitch
 
       <div class="row p-3 Forum-User">
         <img class="ui avatar image my-auto" src="{{ $forum_item->u_photo }}">
         <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.</span>
       </div>
 
-      <div class="row" style="position: absolute; right: 1rem; top: 2rem; opacity: .75">
+      <div class="row" style="position: absolute; right: 1rem; top: 5.25rem; opacity: .75">
         <button class="ui button green fluid mb-3">{{ $forum_item->views }} views</button>
       </div>
 
-      <div class="row" style="position: absolute; right: 1rem; top: 6rem; opacity: .75">
-        <button class="ui button green fluid mb-3">{{ $forum_item->evaluation_score }} | Score</button>
+      <div class="row" style="position: absolute; right: 1rem; top: 10.5rem; opacity: .75">
+        <button class="ui button green fluid mb-3">{{ $forum_item->evaluation_score }} out of {{ count($comments) * 3 }} MAX Score | Score</button>
         <button class="ui button red fluid mb-3">{{ $forum_item->likes }} | Likes</button>
         <button class="ui button orange fluid mb-3">{{ $forum_item->helpful }} | Helpful</button>
         <button class="ui button black fluid">{{ $forum_item->comments }} | Comments</button>
