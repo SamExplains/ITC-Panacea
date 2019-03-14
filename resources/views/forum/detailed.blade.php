@@ -100,16 +100,6 @@
               </div>
             </div>
 
-
-
-            Demographic
-            Age
-            Country
-
-            Medical
-            DOB
-            State, Health Insurance Name Phone and Physician Name Phone, Clinic Name Phone
-
           </div>
 
           <script>
@@ -124,7 +114,6 @@
                 url: "{{ route('search.medical', $forum_item->user_id)  }}",
                 data: {_token: "{{ csrf_token() }}"},
                 success: (response) => {
-                  console.warn(response);
                   $('#age').val(response.user.age);
                   $('#country').val(response.user.country);
                   $('#race').val(response.user.race);
