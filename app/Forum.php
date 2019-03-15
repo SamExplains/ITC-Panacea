@@ -51,13 +51,13 @@ class Forum extends Model
   public function gradeThisThread(){
     $evaluation_score = $this->evaluation_score;
     $max_evaluation_score = ($this->comments * 3);
-    $min = $max_evaluation_score * .33;
+    $min = $max_evaluation_score * .34;
     $max = $max_evaluation_score * .66;
 
     if ($evaluation_score > $max)
       return json_encode('GREEN');
 
-    if ($evaluation_score <= $max)
+    if ($evaluation_score <= $max && $evaluation_score > $min)
       return json_encode('YELLOW');
 
     if ($evaluation_score <= $min)
