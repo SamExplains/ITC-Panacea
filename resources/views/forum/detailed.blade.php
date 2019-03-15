@@ -138,14 +138,13 @@
       </div>
 
       <div class="row" style="position: absolute; right: 1rem; top: 5.25rem; opacity: .75">
-        <button class="ui button green fluid mb-3">{{ $forum_item->views }} views</button>
+        <div class="ui label circular bg-white fluid mb-3">{{ $forum_item->views }} <img src="{{asset('images/defaults/views.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
       </div>
 
-      <div class="row" style="position: absolute; right: 1rem; top: 9.5rem; opacity: .75">
-        <button class="ui button green fluid mb-3">{{ $forum_item->evaluation_score }} out of {{ count($comments) * 3 }} MAX Score | Score</button>
-        <button class="ui button red fluid mb-3">{{ $forum_item->likes }} | Likes</button>
-        <button class="ui button orange fluid mb-3">{{ $forum_item->helpful }} | Helpful</button>
-        <button class="ui button black fluid">{{ $forum_item->comments }} | Comments</button>
+      <div class="row" style="position: absolute; right: 1rem; top: 10rem; opacity: .75">
+        <div class="ui label black fluid text-right mb-3">{{ $forum_item->evaluation_score }} out of {{ count($comments) * 3 }} MAX Score | <img src="{{asset('images/defaults/score.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
+        <div class="ui label black fluid text-right mb-3">{{ $forum_item->comments }} | <img src="{{asset('images/defaults/comments.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
+        <button class="ui button mini black fluid text-right">Finalize | {{ \App\Comment::totalCommentsRated($forum_item->id, $forum_item->comments) }} <img src="{{asset('images/defaults/evaluate.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></button>
       </div>
 
       <h2 class="ui header">{{ $forum_item->trimmedConditionName() }}</h2>

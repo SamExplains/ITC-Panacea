@@ -85,7 +85,6 @@
                                             </tr>
                                             </tbody>
                                           </table>
-
                                           <summary class="bg-warning p-3">
                                             <b>{{ mb_ereg_replace('º', '', $forum->condition ) }} by <a href="#">{{ $forum->fullname }}</a></b>
                                           </summary>

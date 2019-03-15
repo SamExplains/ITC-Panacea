@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/evaluate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/score.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/views.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panacea-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/panacea-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,35 +115,78 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-125107604">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="env" value="4" />
+          <entry key="php" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key=".env file" value="4" />
+          <entry key="Blade" value="4" />
+          <entry key="PHP" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="env" value="22" />
+          <entry key="php" value="1139" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="22" />
+          <entry key="Blade" value="695" />
+          <entry key="PHP" value="444" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+            <state relative-caret-position="419">
+              <caret line="145" column="62" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
+              <folding>
+                <element signature="e#5990#6057#0#HTML" expanded="true" />
+                <element signature="e#6185#6218#0#HTML" expanded="true" />
+                <element signature="e#6187#6253#0#HTML" expanded="true" />
+                <element signature="e#6570#6603#0#HTML" expanded="true" />
+                <element signature="e#6665#6698#0#HTML" expanded="true" />
+                <element signature="e#7024#7057#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/panacea-data.sql">
+        <entry file="file://$PROJECT_DIR$/app/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="3597" lean-forward="true" selection-start-line="3597" selection-end-line="3597" />
+            <state relative-caret-position="373">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#23#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SearchController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/comment/comment.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding>
-                <element signature="e#40#60#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -177,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_09_234149_add_photo_to_users.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/resources/sass/profile.scss" />
@@ -194,7 +242,6 @@
         <option value="$PROJECT_DIR$/resources/sass/comment.scss" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_10_052119_create_comments_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_11_050828_add_forum_id_to_comments.php" />
-        <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/app/Forum.php" />
         <option value="$PROJECT_DIR$/resources/js/development.js" />
         <option value="$PROJECT_DIR$/resources/views/comment/_reply.blade.php" />
@@ -207,14 +254,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/evaluations.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/comment/comment.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/forum-categories-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/resources/views/profile/forum-points-severity-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/categories-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/registration-chart.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/replys.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/profile/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/forum/mild.blade.php" />
@@ -226,8 +271,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" />
-        <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
         <option value="$PROJECT_DIR$/panacea-data.sql" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/forum/detailed.blade.php" />
+        <option value="$PROJECT_DIR$/app/Comment.php" />
       </list>
     </option>
   </component>
@@ -328,150 +377,55 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="2528" />
-    <option name="height" value="1326" />
+    <option name="x" value="-12" />
+    <option name="y" value="24" />
+    <option name="width" value="1680" />
+    <option name="height" value="999" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="ITC-Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITC-Panacea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="ITC-Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITC-Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="ITC-Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITC-Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="ITC-Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITC-Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="ITC-Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITC-Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="comment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="conditions_and_symptoms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="demographic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="forum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="_repl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/_reply.blade.php&#10;comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Forum&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ForumControlle&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeController&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;_var&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/_variables.scss&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;commen&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;deta&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/forum/detailed.blade.php&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;ForumCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;CommentCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;Comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/CommentController.php&#10;navigation&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/navigation.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ProfileCon&#9;null&#9;null&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ForumCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;database.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/config/database.php&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;HomeCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Condit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medic&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/app.js" />
+    <property name="SearchEverywhereHistoryKey" value="ForumCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/app/Http/Controllers/ForumController.php&#10;ForumController&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/app/Http/Controllers/ForumController.php&#10;Comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/app/Comment.php&#10;CommentCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/app/Http/Controllers/CommentController.php&#10;home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/resources/views/home.blade.php&#10;navigation&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/resources/views/profile/navigation.blade.php&#10;app.blade&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/ITC-Panacea/resources/views/layouts/app.blade.php&#10;_repl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/_reply.blade.php&#10;comment&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;web&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;web.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;Forum&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ForumControlle&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;HomeController&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;_var&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/_variables.scss&#10;app.bla&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;app&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php&#10;commen&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/comment/comment.blade.php&#10;deta&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/forum/detailed.blade.php&#10;ForumCon&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ForumController.php&#10;profile&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;HomeCont&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;ProfileCon&#9;null&#9;null&#10;Home&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;database.php&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/config/database.php&#10;profile.&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/sass/profile.scss&#10;HomeCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;hom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;Condit&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medic&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Condi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medica&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Medical&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;Conditio&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;webpack&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/webpack.mix.js&#10;we&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/routes/web.php&#10;ConditionsCOn&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/ConditionsAndSymptomsController.php&#10;Medi&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/MedicalInformationController.php&#10;profil&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/profile/profile.blade.php&#10;Demogr&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;HomeC&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;Demogra&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/DemographicsController.php&#10;register&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/register.blade.php&#10;login&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/auth/login.blade.php&#10;HomeContro&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/app/Http/Controllers/HomeController.php&#10;bootstrap.js&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/js/bootstrap.js&#10;welcom&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/welcome.blade.php&#10;home.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/home.blade.php&#10;app.bl&#9;FILE&#9;file:///Users/Sam/Documents/Github Local/Panacea/resources/views/layouts/app.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -482,16 +436,16 @@
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/profile" />
       <recent name="$PROJECT_DIR$/public/images/defaults" />
+      <recent name="$PROJECT_DIR$/resources/views/profile" />
       <recent name="$PROJECT_DIR$/resources/views/forms/medical_information" />
       <recent name="$PROJECT_DIR$/public/images/user-types" />
       <recent name="$PROJECT_DIR$/resources/images/user-types" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -536,11 +490,12 @@
       <workItem from="1552462254212" duration="8000" />
       <workItem from="1552468998425" duration="3596000" />
       <workItem from="1552526459487" duration="42000" />
+      <workItem from="1552576580124" duration="4013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156040000" />
+    <option name="totallyTimeSpent" value="160053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,10 +507,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2528" height="1326" extended-state="0" />
-    <editor active="true" />
+    <frame x="-12" y="24" width="1680" height="999" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13085622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13144962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -585,13 +539,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Symptom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_09_234149_add_photo_to_users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="992">
@@ -648,13 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -744,24 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/profile/evaluations.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -800,24 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="115" column="40" lean-forward="true" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/navigation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="32" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -849,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1141">
@@ -884,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/comment/comment.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -905,27 +803,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
+    <entry file="file://$PROJECT_DIR$/panacea-data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+        <state relative-caret-position="722">
+          <caret line="3597" selection-start-line="3597" selection-end-line="3597" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/navigation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="106" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#2;n#ul#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#3;n#ul#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#4;n#ul#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SearchController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="698">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ForumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="71" column="68" lean-forward="true" selection-start-line="71" selection-start-column="68" selection-end-line="71" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/comment/comment.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forum/detailed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="145" column="62" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
           <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
+            <element signature="e#5990#6057#0#HTML" expanded="true" />
+            <element signature="e#6185#6218#0#HTML" expanded="true" />
+            <element signature="e#6187#6253#0#HTML" expanded="true" />
+            <element signature="e#6570#6603#0#HTML" expanded="true" />
+            <element signature="e#6665#6698#0#HTML" expanded="true" />
+            <element signature="e#7024#7057#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/panacea-data.sql">
+    <entry file="file://$PROJECT_DIR$/app/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="3597" lean-forward="true" selection-start-line="3597" selection-end-line="3597" />
+        <state relative-caret-position="373">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

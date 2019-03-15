@@ -64,15 +64,22 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item item my-auto">
+                                <a class="nav-link" href="{{ route('home') }}"><span class="text-primary" style="font-size: 1rem; font-weight: 900">D</span>ashboard</a>
+                            </li>
+                            <li class="nav-item item my-auto">
+                                <a class="nav-link " href="{{ route('forum.index') }}"><span class="text-primary" style="font-size: 1rem; font-weight: 900">F</span>orum</a>
+                            </li>
+                            <li class="nav-item item my-auto">
+                                <a class="nav-link" href="{{ route('profile.index') }}"><span class="text-primary" style="font-size: 1rem; font-weight: 900">P</span>rofile</a>
+                            </li>
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     <img src="{{ Auth::user()->photo }}" class="ui mini image fluid circular d-inline-block mr-2" style="object-fit: cover; object-position: center; width: 2rem !important; height: 2rem !important;" alt=""> {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('home') }}">Dashboard</a>
-                                    <a class="dropdown-item" href="{{ route('profile.index') }}">Profile</a>
-                                    <a class="dropdown-item" href="{{ route('forum.index') }}">Forum</a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
