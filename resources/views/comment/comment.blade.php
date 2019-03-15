@@ -4,7 +4,7 @@
 
 <div class="Comment" style="position: relative; margin-bottom: 6rem">
 
-  <p class="text-right offset-md-9 offset-6 col-md-3 col-6 Comment-User">
+  <p class="text-right offset-md-9 offset-md-6 col-md-3 col-12 Comment-User">
     <span class="font-weight-bold">{{ $comment->user_name }} | <span class="font-weight-light">{{ $comment->user_account_type }}</span></span>
     <img class="ui avatar image ml-3" src="{{ $comment->user_photo }}">
   </p>
@@ -16,9 +16,29 @@
 
     {{-- Check if comment has a score --}}
     @if ($comment->physician_evaluation_score !== 0)
-      <div class="Comment-Physician bg-warning p-1"  style="position: absolute; top: 100%; right: 0;">
-        <h6 class="ui header text-right">A physician gave this post a {{ $comment->physician_evaluation_score }}</h6>
-      </div>
+
+      @switch($comment->physician_evaluation_score)
+
+        @case(1)
+        <div class="Comment-Physician bg-danger p-1"  style="position: absolute; top: 100%; right: 0;">
+          <h6 class="ui header text-right text-white">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+        </div>
+        @break
+
+        @case(2)
+        <div class="Comment-Physician bg-warning p-1"  style="position: absolute; top: 100%; right: 0;">
+          <h6 class="ui header text-right">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+        </div>
+        @break
+
+        @case(3)
+        <div class="Comment-Physician bg-success p-1"  style="position: absolute; top: 100%; right: 0;">
+          <h6 class="ui header text-right text-white">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+        </div>
+        @break
+
+      @endswitch
+
     @else
       <div class="Comment-Physician"  style="position: absolute; top: 95%; right: 0;">
         <h6 class="ui header text-right">Evaluate this comment <b class="text-primary">(Physician Only!)</b></h6>

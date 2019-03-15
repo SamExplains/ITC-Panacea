@@ -29,12 +29,15 @@
 
       <div class="row p-3 Forum-User">
         <img class="ui avatar image my-auto" src="{{ $forum_item->u_photo }}">
-        <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.</span>
 
-        @if (strtolower(Auth::user()->account) === "physician")
-          <button class="ui circular button yellow small ml-3" onclick="showUsersMedicalProfile()">
-            <i class="ui icon folder"></i> Show Medical Profile
-          </button>
+        @if (!strtolower(Auth::user()->account) === "physician")
+          <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.</span>
+        @else (!strtolower(Auth::user()->account) === "physician")
+          <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.
+                    <button class="ui circular button yellow small ml-3 text" onclick="showUsersMedicalProfile()">
+                      <i class="ui icon folder"></i> Show Medical Record
+                    </button>
+          </span>
 
           <div class="col-12 p-3 d-none ui form mt-3 animated fadeInUp" id="MedicalInformation">
 
@@ -137,15 +140,71 @@
 
       </div>
 
-      <div class="row" style="position: absolute; right: 1rem; top: 5.25rem; opacity: .75">
-        <div class="ui label circular bg-white fluid mb-3">{{ $forum_item->views }} <img src="{{asset('images/defaults/views.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
-      </div>
+        <div class="row text-center">
+          <div class="ui label fluid align-content-between">
+            <div class="ui label">
+              {{ $forum_item->views }} <img src="{{asset('images/defaults/views.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt="">
+            </div>
+            <div class="ui label">
+              {{ $forum_item->evaluation_score }} out of possible {{ count($comments) * 3 }} Score <img src="{{asset('images/defaults/score.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt="">
+            </div>
+            <div class="ui label">
+              {{ $forum_item->comments }} <img src="{{asset('images/defaults/comments.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt="">
+            </div>
+            <div class="ui label">
 
-      <div class="row" style="position: absolute; right: 1rem; top: 10rem; opacity: .75">
-        <div class="ui label black fluid text-right mb-3">{{ $forum_item->evaluation_score }} out of {{ count($comments) * 3 }} MAX Score | <img src="{{asset('images/defaults/score.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
-        <div class="ui label black fluid text-right mb-3">{{ $forum_item->comments }} | <img src="{{asset('images/defaults/comments.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></div>
-        <button class="ui button mini black fluid text-right">Finalize | {{ \App\Comment::totalCommentsRated($forum_item->id, $forum_item->comments) }} <img src="{{asset('images/defaults/evaluate.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt=""></button>
-      </div>
+              @switch(\App\Comment::totalCommentsRated($forum_item->id, $forum_item->comments))
+                @case("N/A")
+                  No comments available to score or pending scores <img src="{{asset('images/defaults/evaluate.svg')}}" style="width: 2rem; height: 2rem" class="ui image fluid d-inline-block ml-2" alt="">
+                @break
+
+                @case("All comments scored.")
+
+                    @if (Auth::user()->account === "physician")
+                      @if ($forum_item->physician_grade === 'N/A')
+                        <button id="finalize_btn" class="ui button green small" onclick="finalize({{$forum_item->gradeThisThread()}})">Finalize. This thread will recieve a grade {{$forum_item->returnGradeLabel()}} if finalized.</button>
+
+                        <script type="application/javascript">
+
+                          function finalize(grade) {
+                            $.ajax({
+                              type: "POST",
+                              url: "{{route('search.grade', $forum_item->id)}}",
+                              data: {_token: '{{ csrf_token() }}', grade: grade},
+                              dataType: 'JSON' ,
+                              success: () => {
+                                $('#finalize_btn').remove();
+                              },
+                            });
+                          }
+                        </script>
+                      @else
+                      Thread has been finalized and graded by physician. Comments disabled.
+                      @endif
+
+                    @else
+
+                  {{-- Check if forum finalized --}}
+                  @if ($forum_item->physician_grade === 'N/A')
+                    All comments scored. Pending final evaluation.
+                  @else
+                    Thread has been finalized and graded by physician. Comments disabled.
+                  @endif
+
+
+                  @endif
+
+                @break
+
+                @default()
+                  {{-- Called automatically via model if hits this case --}}
+                @break
+
+              @endswitch
+            </div>
+          </div>
+        </div>
+
 
       <h2 class="ui header">{{ $forum_item->trimmedConditionName() }}</h2>
       <hr>
@@ -177,8 +236,14 @@
       <hr>
 
       @if (Auth::user()->account !== "physician")
-        <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
-        @include('comment._reply')
+
+        @if ($forum_item->physician_grade === 'N/A')
+            <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
+            @include('comment._reply')
+        @else
+            Thread has been finalized and graded by physician. Comments disabled.
+        @endif
+
       @endif
 
     </div>

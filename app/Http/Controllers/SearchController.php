@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Demographic;
+use App\Forum;
 use App\MedicationOther;
 use Illuminate\Http\Request;
 
@@ -25,6 +26,13 @@ class SearchController extends Controller
 
   public function allMedicationsOther(){
     return MedicationOther::all();
+  }
+
+  public function physicianFinalForumEvaluation($id, Request $request) {
+    $forum_info = Forum::findOrFail($id);
+    $forum_info->physician_grade = $request->get('grade');
+    $forum_info->save();
+    return response()->json($forum_info);
   }
 
   public function physicianRequestUserMedicalInformation($id) {

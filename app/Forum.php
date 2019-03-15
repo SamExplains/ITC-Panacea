@@ -32,4 +32,57 @@ class Forum extends Model
 
   }
 
+  public function returnGradeLabel() {
+
+    switch (json_decode($this->gradeThisThread())){
+      case 'RED':
+        echo '<span class="ui label ml-2">RED <i class="ui icon circle red ml-2"></i></span>';
+        break;
+      case 'YELLOW':
+        echo '<span class="ui label ml-2">YELLOW <i class="ui icon circle yellow ml-2"></i></span>';
+        break;
+      case 'GREEN':
+        echo '<span class="ui label ml-2">GREEN <i class="ui icon circle green ml-2"></i></span>';
+        break;
+    }
+
+  }
+
+  public function gradeThisThread(){
+    $evaluation_score = $this->evaluation_score;
+    $max_evaluation_score = ($this->comments * 3);
+    $min = $max_evaluation_score * .33;
+    $max = $max_evaluation_score * .66;
+
+    if ($evaluation_score > $max)
+      return json_encode('GREEN');
+
+    if ($evaluation_score <= $max)
+      return json_encode('YELLOW');
+
+    if ($evaluation_score <= $min)
+      return json_encode('RED');
+
+  }
+
+  public function returnPhysicianGradeLabelIfAvailable(){
+/* <span class="ui label">RED <i class="ui icon circle red ml-2"></i></span> */
+    switch ($this->physician_grade){
+      case 'N/A':
+        echo '<span class="ui label">N/A</span>';
+        break;
+      case 'RED':
+        echo '<span class="ui label">RED <i class="ui icon circle red ml-2"></i></span>';
+        break;
+      case 'YELLOW':
+        echo '<span class="ui label">YELLOW <i class="ui icon circle yellow ml-2"></i></span>';
+        break;
+      case 'GREEN':
+        echo '<span class="ui label">GREEN <i class="ui icon circle green ml-2"></i></span>';
+        break;
+    }
+
+
+  }
+
 }

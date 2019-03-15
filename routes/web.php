@@ -39,6 +39,7 @@ Route::get('/all/symptoms', 'SearchController@allSymptoms');
 Route::get('/all/conditions', 'SearchController@allConditions');
 Route::get('/all/medication', 'SearchController@allMedicationsOther');
 Route::get('/physician/user-mi/{id}', 'SearchController@physicianRequestUserMedicalInformation')->name('search.medical');
+Route::post('/physician/forum-evaluation/{id}', 'SearchController@physicianFinalForumEvaluation')->name('search.grade');
 
 /* Great MD Forms */
 /* https://app.drchrono.com/ehr-emr/medical-form-templates/ */
