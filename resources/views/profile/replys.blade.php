@@ -24,6 +24,38 @@
                 {{ $comment->user_response }}
               </p>
 
+              @if ($comment->physician_evaluation_score !== 0)
+
+                @switch($comment->physician_evaluation_score)
+                  {{-- Color coded comments --}}
+                  @case(1)
+                  <div class="Comment-Physician bg-danger p-1"  style="position: absolute; top: 100%; right: 0;">
+                    <h6 class="ui header text-right text-white">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+                  </div>
+                  @break
+
+                  @case(2)
+                  <div class="Comment-Physician bg-warning p-1"  style="position: absolute; top: 100%; right: 0;">
+                    <h6 class="ui header text-right">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+                  </div>
+                  @break
+
+                  @case(3)
+                  <div class="Comment-Physician bg-success p-1"  style="position: absolute; top: 100%; right: 0;">
+                    <h6 class="ui header text-right text-white">A physician scored this post as a {{ $comment->physician_evaluation_score }}</h6>
+                  </div>
+                  @break
+
+                @endswitch
+
+                @else
+                <div class="Comment-Physician bg-info p-1"  style="position: absolute; top: 100%; right: 0;">
+                  <h6 class="ui header text-right text-white">This post has not been evaluated yet.</h6>
+                </div>
+
+              @endif
+
+
             </div>
 
           @endforeach
