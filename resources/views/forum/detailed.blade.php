@@ -30,9 +30,9 @@
       <div class="row p-3 Forum-User">
         <img class="ui avatar image my-auto" src="{{ $forum_item->u_photo }}">
 
-        @if (!strtolower(Auth::user()->account) === "physician")
+        @if (strtolower(Auth::user()->account) !== "physician")
           <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.</span>
-        @else (!strtolower(Auth::user()->account) === "physician")
+        @else (strtolower(Auth::user()->account) === "physician")
           <span class="my-auto ml-3">{{ $forum_item->fullname }} <b class="text-success font-weight-bold">is a {{ $forum_item->account }}</b> with a {{ $forum_item->returnColorCodedSeverity() }} condition.
                     <button class="ui circular button yellow small ml-3 text" onclick="showUsersMedicalProfile()">
                       <i class="ui icon folder"></i> Show Medical Record

@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" href="{{asset('images/Favicons (panacea)/favicon-48.png')}}"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -66,7 +67,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height container">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -81,25 +82,23 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                  <img src="{{asset('images/Favicons (panacea)/favicon-60.png')}}" alt="">Panacea Medical App
-                </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-              <p>Popular Questions</p>
-              <p>Latest Questions</p>
-              <p>Top User(s)</p>
-              <p>Top Physician(s)</p>
+          <div class="row">
+            <div class="content">
+              <div class="title m-b-md bg-warning">
+                <img src="{{asset('images/Favicons (panacea)/favicon-60.png')}}" alt="">Panacea
+              </div>
+
+              <div class="col-md-8 col-12 mx-auto">
+                <p class="lead"><span class="font-weight-bold">Hey there</span>, <br> We here at Panacea give users like yourself the opportunity to create virtual medical portfolios about your complicated medical conditions and allow our network of other patients just like yourself along with qualified physicians to analyze and review user created content for quality and accuracy of clinical information.</p>
+                <p class="lead">In order to start you are required to create and account. If you already have an account you can start exploring our forum.</p>
+
+              </div>
+
             </div>
+          </div>
+
+
         </div>
     </body>
 </html>

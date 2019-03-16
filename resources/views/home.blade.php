@@ -130,11 +130,17 @@
 
                         @else
                           <h5 class="ui header font-weight-bold">Physician Evaluation Latest</h5>
-                          @foreach($records as $r)
-                            <div class="Comment" style="position: relative; margin-bottom: 1rem; margin-top: 1rem">
-                              <p>You gave this user response a evaluation score of <b class="bg-success p-1">{{ $r->physician_evaluation_score }}</b> <a class="float-right" href="{{route('forum.show', $r->forum_id )}}">View this post <i class="ui icon arrow right"></i></a></p>
-                            </div>
-                          @endforeach
+
+                          @if (count($records) === 0)
+                            You have not evaluated any patients replys.
+                          @else
+                            @foreach($records as $r)
+                              <div class="Comment" style="position: relative; margin-bottom: 1rem; margin-top: 1rem">
+                                <p>You gave this user response a evaluation score of <b class="bg-success p-1">{{ $r->physician_evaluation_score }}</b> <a class="float-right" href="{{route('forum.show', $r->forum_id )}}">View this post <i class="ui icon arrow right"></i></a></p>
+                              </div>
+                            @endforeach
+                          @endif
+
                         @endif
 
                       </div>
