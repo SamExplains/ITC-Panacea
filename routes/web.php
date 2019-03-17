@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 //  return json_decode(curl_exec($ch), true);
 
-    return view('welcome');
+    return view('welcome', ['topPhysiciansData' => \App\Http\Controllers\SearchController::topPhysician()]);
 });
 
 Auth::routes();
@@ -40,6 +40,7 @@ Route::get('/all/conditions', 'SearchController@allConditions');
 Route::get('/all/medication', 'SearchController@allMedicationsOther');
 Route::get('/physician/user-mi/{id}', 'SearchController@physicianRequestUserMedicalInformation')->name('search.medical');
 Route::post('/physician/forum-evaluation/{id}', 'SearchController@physicianFinalForumEvaluation')->name('search.grade');
+Route::get('/physician/top', 'SearchController@topPhysician')->name('search.top');
 
 /* Great MD Forms */
 /* https://app.drchrono.com/ehr-emr/medical-form-templates/ */

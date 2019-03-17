@@ -12,6 +12,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+      {{-- Chart JS & CSS --}}
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"  type="application/javascript"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" type="text/css">
+
         <!-- Styles -->
         <style>
             html, body {
@@ -89,9 +93,17 @@
                 <img src="{{asset('images/Favicons (panacea)/favicon-60.png')}}" alt="">Panacea
               </div>
 
-              <div class="col-md-8 col-12 mx-auto">
+              <div class="col-12 mx-auto">
                 <div class="Comment mt-4 lead">
                   In order to start you are required to create and account. If you already have an account you can start exploring our forum.
+                </div>
+              </div>
+
+              <div class="col-12 mx-auto">
+                <div class="Comment mt-4 lead">
+
+                  @include('profile.topPhysician', ['tpd' => $topPhysiciansData])
+
                 </div>
               </div>
 

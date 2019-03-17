@@ -49941,6 +49941,30 @@ a.text-dark:focus {
   transition: all ease-in-out 0.3s;
 }
 
+.Physician {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.Physician-BackImageColor {
+  background-color: rgba(45, 199, 255, 0.71);
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 25rem;
+}
+
+.Physician-Image {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 25rem;
+}
+
 .Forum {
   background: rgba(221, 221, 221, 0.7);
 }

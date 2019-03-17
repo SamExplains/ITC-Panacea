@@ -54,3 +54,26 @@
 .Demographic {
 
 }
+
+.Physician {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+
+  &-BackImageColor {
+    background-color: $sky-blue-opac-50;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 25rem;
+  }
+
+  &-Image{
+    object-position: center;
+    object-fit: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 25rem;
+  }
+
+}

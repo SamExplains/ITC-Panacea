@@ -107,6 +107,6 @@ class ForumController extends Controller
     {
       Forum::destroy($request->get('id'));
       Comment::where('forum_id', '=', $request->get('id'))->delete();
-      return response()->json(['You Sent' => $request->all() ]);
+      return response()->json(['Success' => "Items removed." ]);
     }
 }
