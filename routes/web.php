@@ -48,6 +48,7 @@ Route::post('/physician/forum-evaluation/{id}', 'SearchController@physicianFinal
 Route::get('profile/conditions', 'ProfileController@conditions')->name('profile.conditions');
 Route::get('profile/replys', 'ProfileController@replys')->name('profile.replys');
 Route::get('profile/evaluations', 'ProfileController@evaluations')->name('profile.evaluations');
+Route::get('profile/cleaning', 'ProfileController@cleaning')->name('profile.cleaning');
 
 /* Forum Filters */
 Route::get('forum/mild', 'ForumController@mild')->name('forum.mild');

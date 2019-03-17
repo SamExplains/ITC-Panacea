@@ -235,7 +235,7 @@
 
       <hr>
 
-      @if (Auth::user()->account !== "physician")
+      @if (Auth::user()->account !== "physician" && Auth::user()->account !== "administrator")
 
         @if ($forum_item->physician_grade === 'N/A')
             <h6 class="ui header">Write a reply to {{ $forum_item->fullname }}</h6>
@@ -244,6 +244,8 @@
             Thread has been finalized and graded by physician. Comments disabled.
         @endif
 
+      @else
+        Commenting is off limits to physicians and administrators!
       @endif
 
     </div>

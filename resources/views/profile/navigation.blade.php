@@ -13,6 +13,10 @@
           <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/evaluations' ? 'active' : '')  }}" href="{{route('profile.evaluations')}}">Evaluations</a>
         @endempty
 
+        @if(strtolower(Auth::user()->account) === "administrator")
+          <a class="item {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/cleaning' ? 'active' : '')  }}" href="{{route('profile.cleaning')}}">Delete</a>
+        @endempty
+
       </div>
       <div class="ui bottom attached tab segment {{ (Route::getCurrentRequest()->getRequestUri() === '/profile' ? 'active' : '')  }}" data-tab="first">
         Your profile
@@ -23,11 +27,19 @@
       <div class="ui bottom attached tab segment {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/replys' ? 'active' : '')  }}" data-tab="third">
         Your replies to other users
       </div>
+
       @if(strtolower(Auth::user()->account) === "physician")
         <div class="ui bottom attached tab segment {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/evaluations' ? 'active' : '')  }}" data-tab="third">
           Your evaluations to other users posts and comments
         </div>
       @endempty
+
+      @if(strtolower(Auth::user()->account) === "administrator")
+        <div class="ui bottom attached tab segment {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/cleaning' ? 'active' : '')  }}" data-tab="third">
+          You can delete user threads.
+        </div>
+      @endempty
+
     </div>
   </div>
 </div>

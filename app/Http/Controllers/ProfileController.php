@@ -44,6 +44,10 @@ class ProfileController extends Controller
       return view('profile.evaluations', ['records' => $p_records]);
     }
 
+    public function cleaning() {
+     return view('profile.admin');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -20,6 +20,17 @@
                     {{--You are logged in!--}}
 
                     <div class="row">
+
+                      {{-- Only if Admin --}}
+                      @if (strtolower(Auth::user()->account) === "administrator")
+                          <div class="col-12 mb-3">
+                            <div class="Comment">
+                              <h6 class="ui header text-success">Hello administrator {{ Auth::user()->name }}</h6>
+                              <p>Please use <a href="{{route('profile.cleaning')}}">this link</a> to remove any threads.</p>
+                            </div>
+                          </div>
+                      @endif
+
                       <div class="col-md-6">
                         @if (strtolower(Auth::user()->account) !== "physician")
 

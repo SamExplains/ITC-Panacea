@@ -90,9 +90,9 @@
               </div>
 
               <div class="col-md-8 col-12 mx-auto">
-                <p class="lead"><span class="font-weight-bold">Hey there</span>, <br> We here at Panacea give users like yourself the opportunity to create virtual medical portfolios about your complicated medical conditions and allow our network of other patients just like yourself along with qualified physicians to analyze and review user created content for quality and accuracy of clinical information.</p>
-                <p class="lead">In order to start you are required to create and account. If you already have an account you can start exploring our forum.</p>
-
+                <div class="Comment mt-4 lead">
+                  In order to start you are required to create and account. If you already have an account you can start exploring our forum.
+                </div>
               </div>
 
             </div>
