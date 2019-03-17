@@ -36,7 +36,7 @@
 
       @if(strtolower(Auth::user()->account) === "administrator")
         <div class="ui bottom attached tab segment {{ (Route::getCurrentRequest()->getRequestUri() === '/profile/cleaning' ? 'active' : '')  }}" data-tab="third">
-          You can delete user threads.
+          A an Admnin, you can delete user threads here.
         </div>
       @endempty
 

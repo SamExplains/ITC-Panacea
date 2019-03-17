@@ -96,14 +96,17 @@ class ForumController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+  /**
+   * Remove the specified resource from storage.
+   *
+   * @param  int $id
+   * @param Request $request
+   * @return \Illuminate\Http\Response
+   */
+    public function destroy($id, Request $request)
     {
-        //
+      Forum::destroy($request->get('id'));
+      Comment::where('forum_id', '=', $request->get('id'))->delete();
+      return response()->json(['You Sent' => $request->all() ]);
     }
 }

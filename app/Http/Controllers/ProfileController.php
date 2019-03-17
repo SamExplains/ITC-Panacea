@@ -45,7 +45,8 @@ class ProfileController extends Controller
     }
 
     public function cleaning() {
-     return view('profile.admin');
+      $threads = Forum::all();
+     return view('profile.admin', ['threads' => $threads]);
     }
 
     /**
