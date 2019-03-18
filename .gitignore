@@ -9,3 +9,8 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+.idea
+/Panacea.org.crt
+/Panacea.org.key
+/Penacea.org.crt
+/Penacea.org.key

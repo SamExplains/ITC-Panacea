@@ -27,7 +27,13 @@
             title: {
               display: true,
               text: '{{ $tpd->name }} and second place total evaluations'
+            },
+            scales: {
+              yAxes: [{
+                barThickness : 15
+              }]
             }
+
           }
         });
       </script>
