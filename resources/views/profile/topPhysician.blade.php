@@ -30,7 +30,7 @@
             },
             scales: {
               yAxes: [{
-                barThickness : 15
+                barThickness : 55
               }]
             }
 

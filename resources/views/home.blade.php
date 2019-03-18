@@ -174,6 +174,10 @@
 
                       </div>
 
+                      <div class="col-12">
+                        <hr>
+                      </div>
+
                       <div class="col-md-4 mt-3">
                         {{--<h5 class="ui header font-weight-bold">Your questions asked</h5>--}}
                         <h5 class="ui header font-weight-bold">Points Breakdown by Severity</h5>
@@ -190,6 +194,10 @@
                         {{--<h5 class="ui header font-weight-bold">Popular Questions</h5>--}}
                         <h5 class="ui header font-weight-bold">Registration Breakdown</h5>
                         @include('profile.registration-chart')
+                      </div>
+
+                      <div class="col-12">
+                        <hr>
                       </div>
 
                       <div class="col-md-8 mt-3">
@@ -215,7 +223,6 @@
                           <a href="{{route('medical.create')}}" class="d-block">New medical information <i class="ml-3 ui arrow right icon"></i></a>
                         @endif
                         <p class="mt-3">Here you can see a broad overview of your medical information in a informative and educational way.</p>
-                        <p class="mt-3">Medical panel instruments like in the photo!</p>
 
                         <hr>
 

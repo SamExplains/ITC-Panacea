@@ -95,7 +95,19 @@
 
               <div class="col-12 mx-auto">
                 <div class="Comment mt-4 lead">
-                  In order to start you are required to create and account. If you already have an account you can start exploring our forum.
+                  <h4 class="ui header">In order to start you are required to create and account. If you already have an account you can start exploring our forum.</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci cumque facilis maiores
+                    perspiciatis temporibus. Adipisci aliquam aliquid amet assumenda cupiditate dicta enim, eveniet id
+                    ipsam iste maxime modi necessitatibus nihil obcaecati quae quibusdam quod ratione repellendus, sint
+                    temporibus ullam voluptate voluptatibus. Ad alias eos illo laborum libero maxime nisi nobis nostrum,
+                    optio perferendis placeat quae, quam quo, repudiandae sequi. Ab accusantium ad animi architecto
+                    assumenda atque aut consectetur, culpa delectus doloremque, exercitationem iste nemo odio omnis quas
+                    rerum tenetur velit veniam! Adipisci delectus dolore ducimus ea, enim harum minima nam odit quas
+                    ratione, rem, voluptatibus! Esse, fuga in incidunt nostrum quaerat velit voluptatibus. Alias animi
+                    distinctio fugiat modi. Dolor eveniet harum impedit in itaque molestiae suscipit tenetur unde!
+                    Asperiores delectus dignissimos esse et ipsa laboriosam, molestias mollitia non praesentium quasi
+                    quibusdam quos, sunt unde ut voluptatibus. At, eligendi est eum impedit iure non nulla quasi,
+                    repellat tempore unde voluptatem.</p>
                 </div>
               </div>
 
@@ -107,9 +119,41 @@
                 </div>
               </div>
 
+              <div class="col-12 mt-4">
+                <div class="row">
+                  <div class="col-4 bg-warning p-4">
+                    <h5 class="ui header">Create your own personalized medical conditions.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
+                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
+                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
+                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
+                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
+                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+                  </div>
+                  <div class="col-4 bg-warning p-4">
+                    <h5 class="ui header">Explore conditions and learn about patients.</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
+                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
+                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
+                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
+                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
+                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+                  </div>
+                  <div class="col-4 bg-warning p-4">
+                    <h5 class="ui header">Take advantage of our expert physicians</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
+                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
+                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
+                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
+                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
+                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
-
 
         </div>
     </body>
