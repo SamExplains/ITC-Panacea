@@ -89,73 +89,108 @@
 
           <div class="row">
             <div class="content">
-              <div class="title m-b-md bg-warning">
+              <div class="title m-b-md bg-warning p-4" style="margin-bottom: 8rem">
                 <img src="{{asset('images/Favicons (panacea)/favicon-60.png')}}" alt="">Panacea
+                <p class="lead">Your online social health platform</p>
               </div>
 
-              <div class="col-12 mx-auto">
-                <div class="Comment mt-4 lead">
-                  <h4 class="ui header">In order to start you are required to create and account. If you already have an account you can start exploring our forum.</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci cumque facilis maiores
-                    perspiciatis temporibus. Adipisci aliquam aliquid amet assumenda cupiditate dicta enim, eveniet id
-                    ipsam iste maxime modi necessitatibus nihil obcaecati quae quibusdam quod ratione repellendus, sint
-                    temporibus ullam voluptate voluptatibus. Ad alias eos illo laborum libero maxime nisi nobis nostrum,
-                    optio perferendis placeat quae, quam quo, repudiandae sequi. Ab accusantium ad animi architecto
-                    assumenda atque aut consectetur, culpa delectus doloremque, exercitationem iste nemo odio omnis quas
-                    rerum tenetur velit veniam! Adipisci delectus dolore ducimus ea, enim harum minima nam odit quas
-                    ratione, rem, voluptatibus! Esse, fuga in incidunt nostrum quaerat velit voluptatibus. Alias animi
-                    distinctio fugiat modi. Dolor eveniet harum impedit in itaque molestiae suscipit tenetur unde!
-                    Asperiores delectus dignissimos esse et ipsa laboriosam, molestias mollitia non praesentium quasi
-                    quibusdam quos, sunt unde ut voluptatibus. At, eligendi est eum impedit iure non nulla quasi,
-                    repellat tempore unde voluptatem.</p>
-                </div>
-              </div>
+              {{--<div class="col-12 mx-auto">--}}
+                {{--<div class="Comment mt-4 lead">--}}
 
-              <div class="col-12 mx-auto">
-                <div class="Comment mt-4 lead">
+                  {{--@include('profile.topPhysician', ['tpd' => $topPhysiciansData])--}}
 
-                  @include('profile.topPhysician', ['tpd' => $topPhysiciansData])
+                {{--</div>--}}
+              {{--</div>--}}
 
-                </div>
-              </div>
-
-              <div class="col-12 mt-4">
+              <div class="col-12 mt-5">
                 <div class="row">
-                  <div class="col-4 bg-warning p-4">
-                    <h5 class="ui header">Create your own personalized medical conditions.</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
-                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
-                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
-                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
-                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
-                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+
+                  <div class="col-4" style="position: relative">
+                    <img src="{{asset('images/defaults/iso_1.svg')}}" class="ui image small centered" alt="">
+
+                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I have question about my condition. 🤔</p>
+
+
                   </div>
-                  <div class="col-4 bg-warning p-4">
-                    <h5 class="ui header">Explore conditions and learn about patients.</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
-                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
-                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
-                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
-                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
-                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+                  <div class="col-4" style="position: relative">
+                    <img src="{{asset('images/defaults/iso_2.svg')}}" class="ui image small centered" alt="">
+                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">Where can I safely discuss my medical conditions? 😟</p>
                   </div>
-                  <div class="col-4 bg-warning p-4">
-                    <h5 class="ui header">Take advantage of our expert physicians</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci error est facere magni
-                      necessitatibus nostrum placeat porro, qui, quis, rerum sit voluptate voluptatum? Architecto
-                      ducimus eos ex nam nihil quidem repellat, similique ut voluptate. Aliquid consequuntur debitis
-                      deleniti deserunt ex nulla perferendis provident repellat ut vel! Doloremque iure iusto nemo
-                      nesciunt. A, accusamus adipisci dicta dolorem eaque, est, harum incidunt inventore ipsum iusto
-                      molestiae officia quo quos rem repudiandae saepe sequi temporibus tenetur unde voluptate.</p>
+                  <div class="col-4" style="position: relative">
+                    <img src="{{asset('images/defaults/iso_4.svg')}}" class="ui image small centered" alt="">
+                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I am a licensed physician able to help you out. 👍</p>
                   </div>
+
+                  <div class="col-12 mt-4">
+                    <h2 class="ui header text-left">What <span class="p-2 bg-warning">Panacea</span> Offers</h2>
+
+                    <div class="row">
+                      <div class="col-md-6 col-12">
+                        <h4 class="ui header text-left mt-5">Licensed Physicians</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci aliquid, architecto beatae
+                          consectetur deserunt ducimus eligendi ex facere fuga harum incidunt ipsum magni maiores maxime
+                          nemo numquam, odio omnis quisquam rem ullam ut velit voluptates. Accusamus adipisci, animi
+                          assumenda et, eveniet fuga fugiat in incidunt ipsa ipsum nulla omnis optio perspiciatis quaerat
+                          quisquam, quo sequi tenetur unde veritatis vero voluptas voluptates voluptatum! Commodi doloremque
+                          dolores et eum id laborum, laudantium mollitia nisi perspiciatis tempora.</p>
+
+                        <hr>
+
+                        <h4 class="ui header text-left mt-5">Explore over a million condition and symptoms combinations</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci aliquid, architecto beatae
+                          consectetur deserunt ducimus eligendi ex facere fuga harum incidunt ipsum magni maiores maxime
+                          nemo numquam, odio omnis quisquam rem ullam ut velit voluptates. Accusamus adipisci, animi
+                          assumenda et, eveniet fuga fugiat in incidunt ipsa ipsum nulla omnis optio perspiciatis quaerat
+                          quisquam, quo sequi tenetur unde veritatis vero voluptas voluptates voluptatum! Commodi doloremque
+                          dolores et eum id laborum, laudantium mollitia nisi perspiciatis tempora.</p>
+
+                        <hr>
+
+                        <h4 class="ui header text-left mt-5">Thread evaluation for clinical accuracy and online community safety</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, adipisci aliquid, architecto beatae
+                          consectetur deserunt ducimus eligendi ex facere fuga harum incidunt ipsum magni maiores maxime
+                          nemo numquam, odio omnis quisquam rem ullam ut velit voluptates. Accusamus adipisci, animi
+                          assumenda et, eveniet fuga fugiat in incidunt ipsa ipsum nulla omnis optio perspiciatis quaerat
+                          quisquam, quo sequi tenetur unde veritatis vero voluptas voluptates voluptatum! Commodi doloremque
+                          dolores et eum id laborum, laudantium mollitia nisi perspiciatis tempora.</p>
+
+                      </div>
+                      <div class="col-md-6 col-12">
+                        @include('profile.topPhysician', ['tpd' => $topPhysiciansData])
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
                 </div>
               </div>
-
 
             </div>
+
           </div>
 
         </div>
+
     </body>
 </html>
 
+
+{{--
+              <div class="row">
+
+                <div class="col-6">
+
+                  <img src="{{asset('images/defaults/iso_1.svg')}}" class="ui image small centered" alt="">
+
+                </div>
+
+                <div class="col-6">
+
+                  <img src="{{asset('images/defaults/iso_2.svg')}}" class="ui image small centered" alt="">
+
+                </div>
+
+              </div>
+--}}

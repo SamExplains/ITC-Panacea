@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5900e131-fc7f-4271-bfa6-097ed1ad1ebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/iso_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/iso_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/iso_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/defaults/iso_4.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/topPhysician.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/topPhysician.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
@@ -34,7 +37,7 @@
     <session id="-159085630">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
@@ -52,10 +55,10 @@
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -64,14 +67,14 @@
           <entry key="gitignore" value="36" />
           <entry key="js" value="580" />
           <entry key="json" value="73" />
-          <entry key="php" value="46121" />
+          <entry key="php" value="47572" />
           <entry key="scss" value="1940" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="16" />
-          <entry key="Blade" value="32713" />
+          <entry key="Blade" value="34164" />
           <entry key="Git file" value="36" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="21" />
@@ -91,10 +94,10 @@
           <entry key="js" value="31" />
           <entry key="json" value="7" />
           <entry key="php" value="473" />
-          <entry key="rnc" value="1" />
+          <entry key="rnc" value="2" />
           <entry key="scss" value="38" />
           <entry key="sql" value="3" />
-          <entry key="svg" value="5" />
+          <entry key="svg" value="8" />
           <entry key="vue" value="2" />
         </counts>
       </usages-collector>
@@ -109,10 +112,10 @@
           <entry key="JavaScript" value="31" />
           <entry key="PHP" value="276" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RNG Compact" value="1" />
+          <entry key="RNG Compact" value="2" />
           <entry key="SCSS" value="38" />
           <entry key="SQL" value="3" />
-          <entry key="SVG" value="5" />
+          <entry key="SVG" value="8" />
           <entry key="Vue.js" value="2" />
           <entry key="composer.json" value="3" />
         </counts>
@@ -159,8 +162,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="137" column="114" lean-forward="true" selection-start-line="137" selection-start-column="114" selection-end-line="137" selection-end-column="114" />
+            <state relative-caret-position="586">
+              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+              <folding>
+                <element signature="e#2812#2840#0#HTML" expanded="true" />
+                <element signature="e#3374#3400#0#HTML" expanded="true" />
+                <element signature="e#3620#3699#0#HTML" expanded="true" />
+                <element signature="e#3731#3757#0#HTML" expanded="true" />
+                <element signature="e#4026#4107#0#HTML" expanded="true" />
+                <element signature="e#4062#4088#0#HTML" expanded="true" />
+                <element signature="e#4444#4525#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/profile/topPhysician.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+            <state relative-caret-position="84">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -211,6 +223,8 @@
       <find>medical Pan</find>
       <find>Points Bre</find>
       <find>particle</find>
+      <find>small</find>
+      <find>tiny</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -371,7 +385,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="24" />
-    <option name="width" value="2471" />
+    <option name="width" value="2096" />
     <option name="height" value="1481" />
   </component>
   <component name="ProjectView">
@@ -379,6 +393,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -419,6 +434,19 @@
               <item name="Panacea" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Panacea" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="defaults" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Panacea" type="b2602c69:ProjectViewProjectNode" />
@@ -502,7 +530,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,16 +544,16 @@
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/defaults" />
       <recent name="$PROJECT_DIR$/resources/views/profile" />
       <recent name="$PROJECT_DIR$/resources/views/forms/medical_information" />
       <recent name="$PROJECT_DIR$/public/images/user-types" />
       <recent name="$PROJECT_DIR$/resources/images/user-types" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -582,12 +609,13 @@
       <workItem from="1552837539422" duration="3511000" />
       <workItem from="1552855161773" duration="7478000" />
       <workItem from="1552885091858" duration="66000" />
-      <workItem from="1552891266324" duration="2207000" />
+      <workItem from="1552891266324" duration="2234000" />
+      <workItem from="1552959457927" duration="5793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189607000" />
+    <option name="totallyTimeSpent" value="195427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,10 +627,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="2471" height="1481" extended-state="0" />
+    <frame x="0" y="24" width="2096" height="1481" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.099214554" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.118395306" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -617,7 +645,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.1729452" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.17259651" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.3299712" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -632,34 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/forum.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/conditions_and_symptoms.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_12_064432_create_physician_records_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConditionsAndSymptomsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -952,13 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/profile/topPhysician.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forum/minimal.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -966,10 +959,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/defaults/iso_2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/defaults/iso_13.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/profile/topPhysician.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/defaults/iso_3.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="137" column="114" lean-forward="true" selection-start-line="137" selection-start-column="114" selection-end-line="137" selection-end-column="114" />
+        <state relative-caret-position="586">
+          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#2812#2840#0#HTML" expanded="true" />
+            <element signature="e#3374#3400#0#HTML" expanded="true" />
+            <element signature="e#3620#3699#0#HTML" expanded="true" />
+            <element signature="e#3731#3757#0#HTML" expanded="true" />
+            <element signature="e#4026#4107#0#HTML" expanded="true" />
+            <element signature="e#4062#4088#0#HTML" expanded="true" />
+            <element signature="e#4444#4525#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

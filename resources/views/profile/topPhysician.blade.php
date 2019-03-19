@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-8 col-12 mx-auto Physician">
+    <div class="col-12 mx-auto Physician">
       <p class="bg-warning p-2">This months top physician</p>
       <h4 class="ui image">{{ $tpd->name }}</h4>
       <div class="Physician-BackImageColor mx-auto">
@@ -37,7 +37,7 @@
           }
         });
       </script>
-      
+
     </div>
   </div>
 </div>
