@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Demographic;
 use App\Forum;
 use App\MedicationOther;
+use function Composer\Autoload\includeFile;
 use Illuminate\Http\Request;
 
 class SearchController extends Controller
@@ -51,10 +52,16 @@ class SearchController extends Controller
       ->select(\DB::raw('count(*) as max_evaluations, physician_user_id'))
       ->where('physician_evaluation_score', '>', 0)
       ->groupBy('physician_user_id')->take(2)->get();
-    $top_physician_information = \App\User::findOrFail($top_physician[0]->physician_user_id);
-    $top_physician_information->leading = $top_physician[0]->max_evaluations; /* Leading physician evaluation */
-    $top_physician_information->second = $top_physician[1]->max_evaluations; /* Second physician evaluation */
-    return $top_physician_information;
+
+    if ($top_physician->isEmpty()) {
+      return null;
+    } else {
+      $top_physician_information = \App\User::findOrFail($top_physician[0]->physician_user_id);
+      $top_physician_information->leading = $top_physician[0]->max_evaluations; /* Leading physician evaluation */
+      $top_physician_information->second = $top_physician[1]->max_evaluations; /* Second physician evaluation */
+      return $top_physician_information;
+    }
+
   }
 
 
