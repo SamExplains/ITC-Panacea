@@ -16,6 +16,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"  type="application/javascript"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" type="text/css">
 
+      {{-- Animate --}}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
         <!-- Styles -->
         <style>
             html, body {
@@ -94,34 +97,26 @@
                 <p class="lead">Your online social health platform</p>
               </div>
 
-              {{--<div class="col-12 mx-auto">--}}
-                {{--<div class="Comment mt-4 lead">--}}
-
-                  {{--@include('profile.topPhysician', ['tpd' => $topPhysiciansData])--}}
-
-                {{--</div>--}}
-              {{--</div>--}}
-
               <div class="col-12 mt-5">
                 <div class="row">
 
-                  <div class="col-4" style="position: relative">
+                  <div class="col-4 animated slideInDown" style="position: relative">
                     <img src="{{asset('images/defaults/iso_1.svg')}}" class="ui image small centered" alt="">
 
-                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I have question about my condition. 🤔</p>
+                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I have a question about my condition. What should I do. 🤔</p>
 
 
                   </div>
-                  <div class="col-4" style="position: relative">
+                  <div class="col-4 animated slideInUp" style="position: relative">
                     <img src="{{asset('images/defaults/iso_2.svg')}}" class="ui image small centered" alt="">
                     <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">Where can I safely discuss my medical conditions? 😟</p>
                   </div>
-                  <div class="col-4" style="position: relative">
+                  <div class="col-4 animated slideInRight" style="position: relative">
                     <img src="{{asset('images/defaults/iso_4.svg')}}" class="ui image small centered" alt="">
-                    <p class="bg-primary lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I am a licensed physician able to help you out. 👍</p>
+                    <p class="bg-purple lead p-3 text-white font-weight-bold" style="position: absolute; top: -6rem; right: 5%; border-top-left-radius: 2.5rem">I am a licensed physician able to help you out. 👍</p>
                   </div>
 
-                  <div class="col-12 mt-4">
+                  <div class="col-12 mt-4 animated slideInLeft">
                     <h2 class="ui header text-left">What <span class="p-2 bg-warning">Panacea</span> Offers</h2>
 
                     <div class="row">
@@ -156,7 +151,14 @@
 
                       </div>
                       <div class="col-md-6 col-12">
-                        @include('profile.topPhysician', ['tpd' => $topPhysiciansData])
+
+                        @isset($topPhysiciansData)
+                          @include('profile.topPhysician', ['tpd' => $topPhysiciansData])
+                        @endisset
+                        @if(null === $topPhysiciansData)
+                          No Physician Data Found!
+                        @endif
+
                       </div>
 
                     </div>
