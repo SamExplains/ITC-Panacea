@@ -11,23 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-
-  /* https://api.infermedica.com/v2/conditions */
-
-//  $ch = curl_init('https://api.infermedica.com/v2/symptoms');
-//  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-//  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//  curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-//      'Content-Type: application/json',
-//      'App-Id: 7baf3c5c',
-//      'App-Key: 3427e1a60c0937a3db075b86445dd7ae')
-//  );
-
-//  return json_decode(curl_exec($ch), true);
-
-    return view('welcome', ['topPhysiciansData' => \App\Http\Controllers\SearchController::topPhysician()]);
-});
+Route::get('/', 'SearchController@topPhysician' );
 
 Auth::routes();
 

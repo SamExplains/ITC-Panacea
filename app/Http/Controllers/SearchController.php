@@ -12,11 +12,6 @@ class SearchController extends Controller
 {
     //
 
-  public function __construct()
-  {
-    $this->middleware('auth');
-  }
-
   public function allSymptoms(){
     return \App\Symptom::all();
   }
@@ -47,7 +42,7 @@ class SearchController extends Controller
     return response()->json(['user' => $user_demo]);
   }
 
-  public static function topPhysician() {
+  public function topPhysician() {
     $top_physician = \DB::table('physician_records')
       ->select(\DB::raw('count(*) as max_evaluations, physician_user_id'))
       ->where('physician_evaluation_score', '>', 0)
@@ -59,7 +54,8 @@ class SearchController extends Controller
       $top_physician_information = \App\User::findOrFail($top_physician[0]->physician_user_id);
       $top_physician_information->leading = $top_physician[0]->max_evaluations; /* Leading physician evaluation */
       $top_physician_information->second = $top_physician[1]->max_evaluations; /* Second physician evaluation */
-      return $top_physician_information;
+//      return $top_physician_information;
+      return view('welcome', ['topPhysiciansData' => $top_physician_information]);
     }
 
   }
